@@ -97,10 +97,48 @@
               </div>
             </article>
           </li>
+          <li class="catalog__item">
+            <article class="catalog__card card production">
+              <h3 class="card__title production__title">Процесс производства</h3>
+
+              <div class="production__video">
+                <!-- Плейсхолдер для видео -->
+                <img class="production__video-preview" src="https://via.placeholder.com/260x150" width="260" height="150" alt="Видео процесса производства">
+                <!-- Здесь будет видео -->
+              </div>
+
+              <!-- Возможно здесь дескрипшн и не нужен, совсем обычный блок с текстом и кнопкой снизу -->
+              <p class="card__description production__title">
+                По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+              </p>
+
+              <a class="production__order" href="#">Сделать заказ</a>
+            </article>
+          </li>
         </ul>
       </section>
 
-      <!-- section production (-process) -->
+      <!-- Пока заверстал попап -->
+      <section class="modal modal-order">
+        <h2 class="modal-order__title">Добавить в корзину</h2>
+
+        <p class="modal-order__choose">
+          Выберите размер:
+        </p>
+        <ul class="modal-order__size-list">
+          <li class="modal-order__size-item">
+            <button class="modal-order__size-button--s" type="button">S</button>
+          </li>
+          <li class="modal-order__size-item">
+            <button class="modal-order__size-button--m" type="button">M</button>
+          </li>
+          <li class="modal-order__size-item">
+            <button class="modal-order__size-button--l" type="button">L</button>
+          </li>
+        </ul>
+
+        <a class="modal-order__add" href="#">Добавить</a>
+      </section>
     </main>
 
     <footer class="page-footer">
