@@ -1,0 +1,28 @@
+.promo-item__title {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.promo-item__promo {
+  color: $seafoam-blue;
+  line-height: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.promo-item__description {
+  font-size: 15px;
+  color: $charcoal;
+}
+
+.promo-item__details {
+  font-size: 15px;
+  line-height: 20px;
+  color: $charcoal;
+}
+
+.promo-item__price {
+  color: $charcoal;
+  font-weight: bold;
+}

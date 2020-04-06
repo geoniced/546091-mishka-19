@@ -1,0 +1,8 @@
+.site-list {
+  @include list-style-reset;
+}
+
+.site-list__link {
+  color: $black;
+  text-decoration: none;
+}

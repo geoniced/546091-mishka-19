@@ -1,0 +1,17 @@
+.categories__list {
+  @include list-style-reset;
+}
+
+.categories__item {
+  background-color: $seafoam-blue;
+
+  &--toys {
+    background-color: $greeny-blue;
+  }
+}
+
+.categories__link {
+  @include link-style-reset;
+
+  color: $white;
+}
