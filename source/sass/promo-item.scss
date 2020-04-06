@@ -17,9 +17,15 @@
 }
 
 .promo-item__details {
+  border-collapse: collapse;
+
   font-size: 15px;
   line-height: 20px;
   color: $charcoal;
+}
+
+.promo-item__row {
+  border-bottom: 1px solid $lightgray;
 }
 
 .promo-item__price {
