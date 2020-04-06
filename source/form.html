@@ -35,9 +35,87 @@
 
     <main class="page-main">
 
-      <!-- h1 Вязание на заказ
-        form sections
-      -->
+      <h1 class="page-main__title">Вязание на заказ</h1>
+
+      <section class="page-main__knitting knitting">
+        <p class="knitting__description">
+          Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+        </p>
+
+        <form class="knitting__form" action="https://echo.htmlacademy.ru" method="post">
+
+          <fieldset class="knitting__field">
+            <legend class="knitting__field-name">Тип</legend>
+            <label class="knitting__label">
+              Аксессуар для интерьера <input class="knitting__radio" type="radio" name="knitting__type" value="accessory" checked>
+            </label>
+            <label class="knitting__label">
+              Детская игрушка <input class="knitting__radio" type="radio" name="knitting__type" value="children-toy">
+            </label>
+          </fieldset>
+
+          <fieldset class="knitting__field">
+            <legend class="knitting__field-name">Цвет</legend>
+
+            <label class="knitting__label">
+              Белый <input class="knitting__checkbox" type="checkbox" name="knitting__color" value="white" checked>
+            </label>
+            <label class="knitting__label">
+              Серый <input class="knitting__checkbox" type="checkbox" name="knitting__color" value="gray" checked>
+            </label>
+            <label class="knitting__label">
+              «Тиффани» <input class="knitting__checkbox" type="checkbox" name="knitting__color" value="tiffany">
+            </label>
+            <label class="knitting__label">
+              Черный <input class="knitting__checkbox" type="checkbox" name="knitting__color" value="black">
+            </label>
+            <label class="knitting__label">
+              Розовый <input class="knitting__checkbox" type="checkbox" name="knitting__color" value="pink">
+            </label>
+            <label class="knitting__label">
+              Оранжевый <input class="knitting__checkbox" type="checkbox" name="knitting__color" value="orange">
+            </label>
+          </fieldset>
+
+          <fieldset class="knitting__field">
+            <legend class="knitting__field-name">ФИО</legend>
+
+            <label class="knitting__label" for="knitting__first-name">Имя:</label>
+            <input class="knitting__input" type="text" name="knitting__first-name" id="knitting__first-name">
+
+            <label class="knitting__label" for="knitting__second-name">Фамилия:</label>
+            <input class="knitting__input" type="text" name="knitting__second-name" id="knitting__second-name">
+
+            <label class="knitting__label" for="knitting__middle-name">Отчество:</label>
+            <input class="knitting__input" type="text" name="knitting__middle-name" id="knitting__middle-name">
+          </fieldset>
+
+          <!-- Здесь я немного в ступоре
+               Могу ли я переиспользовать классы элементов с fieldset knitting__field / knitting__field-name
+                 так как оформление подходит как нельзя к стати тем инпутам что ниже
+               Или же мне стоит label+input ниже оборачивать в такой же филдсет (или див?), скрывать легенду или лэйбл
+                 (одно из, чтобы не было дубликации)
+               Трудно понять как это оформить
+          -->
+          <div class="knitting__field">
+            <label class="knitting__field-name" for="knitting__phone">Тел</label>
+            <input class="knitting__input" type="phone" name="knitting__phone" id="knitting__phone" placeholder="+7 XXX XXX XX XX*">
+          </div>
+
+          <div class="knitting__field">
+            <label class="knitting__field-name" for="knitting__email">Email</label>
+            <input class="knitting__input" type="email" name="knitting__email" id="knitting__email" placeholder="Ваш Email*">
+          </div>
+
+          <div class="knitting__field">
+            <label class="knitting__field-name" for="knitting__additional">Доп</label>
+            <textarea class="knitting__textarea" name="knitting__additional" id="knitting__additional" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          </div>
+
+          <small><sup>*</sup>Поля обязательны для заполнения</small>
+          <button class="knitting__order button" type="submit">Отправить заказ</button>
+        </form>
+      </section>
     </main>
 
     <footer class="page-footer">
