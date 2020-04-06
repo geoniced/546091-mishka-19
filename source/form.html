@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -97,20 +98,20 @@
                  (одно из, чтобы не было дубликации)
                Трудно понять как это оформить
           -->
-          <div class="knitting__field">
-            <label class="knitting__field-name" for="knitting__phone">Тел</label>
+          <fieldset class="knitting__field">
+            <legend class="knitting__field-name">Тел</legend>
             <input class="knitting__input" type="phone" name="knitting__phone" id="knitting__phone" placeholder="+7 XXX XXX XX XX*">
-          </div>
+          </fieldset>
 
-          <div class="knitting__field">
-            <label class="knitting__field-name" for="knitting__email">Email</label>
+          <fieldset class="knitting__field">
+            <legend class="knitting__field-name">Email</legend>
             <input class="knitting__input" type="email" name="knitting__email" id="knitting__email" placeholder="Ваш Email*">
-          </div>
+          </fieldset>
 
-          <div class="knitting__field">
-            <label class="knitting__field-name" for="knitting__additional">Доп</label>
+          <fieldset class="knitting__field">
+            <legend class="knitting__field-name">Доп</legend>
             <textarea class="knitting__textarea" name="knitting__additional" id="knitting__additional" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-          </div>
+          </fieldset>
 
           <small><sup>*</sup>Поля обязательны для заполнения</small>
           <button class="knitting__order button" type="submit">Отправить заказ</button>
