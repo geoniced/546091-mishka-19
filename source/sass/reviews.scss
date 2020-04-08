@@ -1,1 +1,20 @@
-$remove-me: 1;
+.reviews__title {
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.reviews__text {
+  font-size: 15px;
+  line-height: 30px;
+  color: $charcoal;
+}
+
+.reviews__author-name {
+  font-style: normal;
+  font-weight: bold;
+}
+
+.reviews__author-social {
+  line-height: 30px;
+  color: $charcoal;
+}
