@@ -1,0 +1,27 @@
+.page-main__banner {
+  background-color: $gray;
+
+  &--stock {
+    background-image: url("../img/hero-mobile@1x.jpg");
+  }
+}
+
+.page-main__title {
+  margin: 0;
+  padding: 0;
+
+  color: $very-dark-brown;
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.page-main__promo {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.page-main__about {
+  padding-left: 30px;
+  padding-right: 30px;
+}

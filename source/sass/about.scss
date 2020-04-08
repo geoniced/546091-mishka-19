@@ -1,0 +1,12 @@
+.about__title {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.about__list {
+  @include list-style-reset;
+
+  line-height: 20px;
+  font-weight: bold;
+}

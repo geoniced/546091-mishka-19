@@ -1,0 +1,21 @@
+.categories__list {
+  @include list-style-reset;
+}
+
+.categories__item {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+
+  background-color: $seafoam-blue;
+
+  &--toys {
+    background-color: $greeny-blue;
+  }
+}
+
+.categories__link {
+  @include link-style-reset;
+
+  color: $white;
+}

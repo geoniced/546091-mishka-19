@@ -1,0 +1,7 @@
+.social__list {
+  @include list-style-reset;
+}
+
+.social__link {
+  color: $black;
+}
