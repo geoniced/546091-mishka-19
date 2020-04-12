@@ -10,3 +10,18 @@
   line-height: 20px;
   font-weight: bold;
 }
+
+@media (min-width: $tablet-width) {
+  .about__list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 400px;
+  }
+
+  .about__item {
+    width: 300px;
+    min-height: 60px;
+    margin-bottom: 60px;
+  }
+}

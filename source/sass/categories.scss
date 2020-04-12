@@ -3,10 +3,12 @@
 }
 
 .categories__item {
+  min-height: 103px;
   padding-top: 30px;
   padding-bottom: 30px;
   padding-left: 30px;
 
+  font-weight: bold;
   background-color: $seafoam-blue;
 
   &--toys {
@@ -18,4 +20,14 @@
   @include link-style-reset;
 
   color: $white;
+}
+
+@media (min-width: $tablet-width) {
+  .categories__list {
+    display: flex;
+  }
+
+  .categories__item {
+    width: 50%;
+  }
 }

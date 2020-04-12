@@ -1,10 +1,16 @@
 .promo-item__title {
+  margin: 0;
+  padding: 0;
+
   font-size: 25px;
   line-height: 30px;
   font-weight: bold;
 }
 
 .promo-item__promo {
+  margin: 0;
+  padding: 0;
+
   color: $seafoam-blue;
   line-height: 20px;
   font-weight: bold;
@@ -32,4 +38,11 @@
   text-align: center;
   color: $charcoal;
   font-weight: bold;
+}
+
+@media (min-width: $tablet-width) {
+  .promo-item__heading {
+    display: flex;
+    justify-content: space-between;
+  }
 }

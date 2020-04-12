@@ -29,6 +29,10 @@ html {
 }
 
 body {
+  margin: 0;
+  padding: 0;
+  min-width: $mobile-width;
+
   font-size: 17px;
   line-height: 24px;
   font-family: "Open Sans", "Arial", sans-serif;
