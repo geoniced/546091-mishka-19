@@ -1,4 +1,26 @@
+.production {
+  display: flex;
+  flex-direction: column;
+}
+
+.production__title {
+  margin: 0;
+  padding: 0;
+
+  font-size: 17px;
+  line-height: 24px;
+}
+
 .production__description {
   font-size: 13px;
   line-height: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .production__video {
+    order: -1;
+
+    // Тоже временно, пока картинку не начну большую юзать
+    min-height: 445px;
+  }
 }

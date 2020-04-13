@@ -9,13 +9,14 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип магазина Mishka">
-      </a>
       <button class="page-header__menu" type="button">Открыть меню</button>
 
       <nav class="main-nav">
         <div class="main-nav__wrapper">
+          <a class="main-nav__logo">
+            <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип магазина Mishka">
+          </a>
+
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a class="site-list__link" href="catalog.html">Каталог товаров</a>
@@ -33,6 +34,17 @@
               <a class="user-list__link" href="cart.html">Корзина: пока пуста</a>
             </li>
           </ul>
+
+          <ul class="main-nav__list main-nav__list--secondary site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="arrivals.html">Новые поступления</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="sale.html">Распродажа</a>
+            </li>
+          </ul>
+
+          <p class="main-nav__info">Бесплатная доставка по России</p>
         </div>
       </nav>
     </header>
@@ -64,28 +76,31 @@
             <p class="promo-item__promo">Товар недели</p>
           </header>
 
-          <p class="promo-item__description">
-            Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.
-          </p>
+          <div class="promo-item__wrapper">
+            <p class="promo-item__description">
+              Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.
+            </p>
 
-          <table class="promo-item__details">
-            <tr class="promo-item__row">
-              <td class="promo-item__property">Цвет:</td>
-              <td class="promo-item__value">«Тиффани»/серый</td>
-            </tr>
-            <tr class="promo-item__row">
-              <td class="promo-item__property">Диаметр:</td>
-              <td class="promo-item__value">25 см</td>
-            </tr>
-            <tr class="promo-item__row">
-              <td class="promo-item__property">Высота:</td>
-              <td class="promo-item__value">15 см</td>
-            </tr>
-          </table>
+            <table class="promo-item__details">
+              <tr class="promo-item__row">
+                <td class="promo-item__property">Цвет:</td>
+                <td class="promo-item__value">«Тиффани»/серый</td>
+              </tr>
+              <tr class="promo-item__row">
+                <td class="promo-item__property">Диаметр:</td>
+                <td class="promo-item__value">25 см</td>
+              </tr>
+              <tr class="promo-item__row">
+                <td class="promo-item__property">Высота:</td>
+                <td class="promo-item__value">15 см</td>
+              </tr>
+            </table>
 
-          <img class="promo-item__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Три выязанные корзинки сложенные друг на друге разных цветов">
-          <p class="promo-item__price">Цена: 990 руб.</p>
-          <a class="promo-item__order button" href="#">Заказать</a>
+            <img class="promo-item__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Три выязанные корзинки сложенные друг на друге разных цветов">
+            <p class="promo-item__price">Цена: 990 руб.</p>
+            <a class="promo-item__order button" href="#">Заказать</a>
+          </div>
+
         </article>
       </section>
 

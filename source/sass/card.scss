@@ -1,3 +1,18 @@
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card__preview {
+  display: block;
+}
+
+.card__preview-image {
+  display: block;
+  width: 260px;
+  height: 195px;
+}
+
 .card__link {
   color: $black;
   font-weight: bold;
@@ -16,6 +31,28 @@
 }
 
 .card__title {
+  margin: 0;
+  padding: 0;
+
   font-size: 17px;
   line-height: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .card {
+    flex-direction: row;
+  }
+
+  .card__preview-image {
+    /* Это временно, пока я не сделаю картинки под планшет+десктоп
+      а то они в мобильной версии ландшафтом идут, а планшет+ идет портретом
+    */
+    min-height: 334px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .card {
+    flex-direction: column;
+  }
 }
