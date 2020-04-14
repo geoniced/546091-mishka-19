@@ -1,8 +1,43 @@
-.catalog {
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
 .catalog__list {
   @include list-style-reset;
+}
+
+.catalog__item {
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.catalog__card {
+  // Вот интересно, это ок вешать бордеры сюда
+  // или они относятся больше к card & production блокам?
+  border: 1px solid $gray;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__item {
+    margin-bottom: 54px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .catalog__item {
+    // Тоже временные стили пока картиночки не будут большими
+    margin-bottom: 54px;
+
+    width: 320px;
+
+    &--full-row {
+      width: 100%;
+    }
+  }
 }

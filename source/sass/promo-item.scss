@@ -1,10 +1,24 @@
+.promo-item {
+  position: relative;
+}
+
+.promo-item__heading {
+  margin-bottom: 25px;
+}
+
 .promo-item__title {
+  margin: 0;
+  padding: 0;
+
   font-size: 25px;
   line-height: 30px;
   font-weight: bold;
 }
 
 .promo-item__promo {
+  margin: 0;
+  padding: 0;
+
   color: $seafoam-blue;
   line-height: 20px;
   font-weight: bold;
@@ -12,6 +26,9 @@
 }
 
 .promo-item__description {
+  margin: 0;
+  padding: 0;
+
   font-size: 15px;
   color: $charcoal;
 }
@@ -32,4 +49,65 @@
   text-align: center;
   color: $charcoal;
   font-weight: bold;
+}
+
+@media (min-width: $tablet-width) {
+  .promo-item__heading {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 55px;
+  }
+
+  .promo-item__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .promo-item__promo {
+    max-width: 80px;
+
+    text-align: center;
+  }
+
+  .promo-item__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; // TODO: временно или нет? хм
+
+    max-width: 292px;
+    min-height: 404px;
+  }
+
+  .promo-item__image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+
+    // TODO По классике, пока картинку не сделал сделаю ей размеры временно
+    width: 333px;
+    height: 404px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo-item__wrapper {
+    max-width: 292px; // (350 total) for image sake
+    min-height: 470px;
+  }
+
+  .promo-item__promo {
+    position: absolute;
+    left: -150px;
+  }
+
+  .promo-item__image {
+    // TODO По классике, пока картинку не сделал сделаю ей размеры временно
+    width: 525px;
+    height: 636px;
+  }
 }

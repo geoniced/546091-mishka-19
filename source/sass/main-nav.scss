@@ -1,1 +1,90 @@
-$not-empty-2: 1;
+.main-nav {
+  min-height: 316px;
+}
+
+.main-nav__logo {
+  display: flex;
+  justify-content: center;
+
+  padding-top: 22px;
+  padding-bottom: 15px;
+
+  border-bottom: 1px solid $white-two;
+}
+
+.main-nav__info {
+  display: none;
+}
+
+.main-nav__list {
+  @include list-style-reset;
+
+  &--secondary {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    // для того, чтобы блоки списков как будто "выпадали"
+    // из потока хедера и свисали под ним
+    height: 80px;
+    min-height: 80px;
+  }
+
+  .main-nav__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    padding-left: 50px;
+    // padding-right: 50px; Оставлю до времени, когда буду делать иконками user-list
+  }
+
+  .main-nav__logo {
+    justify-content: flex-start;
+    width: 370px;
+    border: none;
+  }
+
+  .main-nav__list {
+    display: flex;
+    flex-grow: 1;
+
+    padding-top: 20px;
+
+    &--secondary {
+      display: none;
+    }
+
+    &:first-of-type {
+      order: 1;
+
+      border: none;
+    }
+  }
+
+  .main-nav__info {
+    display: block;
+    order: 3;
+
+    margin: 0;
+    padding-top: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__logo {
+    justify-content: center;
+  }
+
+  .main-nav__list {
+    &--secondary {
+      display: flex;
+    }
+
+    &:first-of-type {
+      order: -1;
+    }
+  }
+}

@@ -3,18 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип магазина Mishka">
-      </a>
+      <button class="page-header__menu" type="button">Открыть меню</button>
+
       <nav class="main-nav">
-        <button class="page-header__menu" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
+          <a class="main-nav__logo" href="index.html">
+            <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип магазина Mishka">
+          </a>
+
+          <ul class="main-nav__list main-nav__list--dropped site-list">
             <li class="site-list__item">
               <a class="site-list__link site-list__link--active" href="catalog.html">Каталог товаров</a>
             </li>
@@ -31,6 +34,17 @@
               <a class="user-list__link" href="cart.html">Корзина: пока пуста</a>
             </li>
           </ul>
+
+          <ul class="main-nav__list main-nav__list--secondary site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="arrivals.html">Новые поступления</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="sale.html">Распродажа</a>
+            </li>
+          </ul>
+
+          <p class="main-nav__info">Бесплатная доставка по России</p>
         </div>
       </nav>
     </header>
@@ -101,9 +115,14 @@
               </div>
             </article>
           </li>
-          <li class="catalog__item">
-            <article class="catalog__card card production">
-              <h3 class="card__title production__title">Процесс производства</h3>
+          <li class="catalog__item catalog__item--full-row">
+            <!-- Нужно ли примешивать card блок?
+              А если я не хочу к примеру того, что в продакшн замиксуется
+              поведение таблетной раскладки – flex-direction: row от card
+              И что я буду его явно переопределять в блоке production?
+            -->
+            <article class="catalog__card production">
+              <h3 class="production__title">Процесс производства</h3>
 
               <div class="production__video">
                 <!-- Плейсхолдер для видео -->

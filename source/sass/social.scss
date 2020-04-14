@@ -1,4 +1,6 @@
 .social__list {
+  display: flex;
+
   @include list-style-reset;
 }
 

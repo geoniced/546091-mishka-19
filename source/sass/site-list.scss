@@ -1,12 +1,22 @@
-.site-list {
-  @include list-style-reset;
+.site-list__item {
+  margin-right: 20px;
+  border-bottom: 1px solid $white-two;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .site-list__link {
+  display: block;
+
   color: $black;
   text-decoration: none;
+  font-weight: bold;
 }
 
-.site-list__item {
-  border-bottom: 1px solid $white-two;
+@media (min-width: $tablet-width) {
+  .site-list__item {
+    border: none;
+  }
 }

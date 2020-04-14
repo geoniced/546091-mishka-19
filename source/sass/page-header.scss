@@ -1,5 +1,28 @@
-.page-header__logo {
-  display: block;
+.page-header {
+  position: relative;
 
-  border-bottom: 1px solid $white-two;
+  width: $mobile-width;
+  margin: 0 auto;
+
+  min-height: 395px; // 79px; wrapped
+}
+
+.page-header__menu {
+  /* ВРЕМЕННО, ЧТОБЫ НЕ МЕШАЛ ПОКА */
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    display: flex;
+    width: $tablet-width;
+
+    min-height: 80px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    width: $desktop-width;
+  }
 }

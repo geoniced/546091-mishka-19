@@ -1,7 +1,19 @@
+.page-main {
+  width: $mobile-width;
+  margin: 0 auto;
+}
+
 .page-main__banner {
+  padding-top: 70px;
+  padding-right: 40px;
+  padding-left: 40px;
+
+  min-height: 177px;
+
   background-color: $gray;
 
   &--stock {
+    min-height: 283px;
     background-image: url("../img/hero-mobile@1x.jpg");
   }
 }
@@ -14,18 +26,24 @@
   font-size: 27px;
   line-height: 30px;
   font-weight: bold;
+  text-align: center;
 }
 
 .page-main__promo {
+  padding-top: 30px;
   padding-left: 30px;
+  padding-bottom: 30px;
   padding-right: 30px;
 }
 
 .page-main__about {
+  padding-top: 30px;
   padding-left: 30px;
+  padding-bottom: 30px;
   padding-right: 30px;
 }
 
+/* TASK 2 */
 .page-main__reviews {
   padding-left: 30px;
   padding-right: 30px;
@@ -36,7 +54,88 @@
   padding-right: 30px;
 }
 
+.page-main__catalog {
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-bottom: 30px;
+  padding-right: 30px;
+}
+
 .page-main__knitting {
   padding-left: 30px;
   padding-right: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main {
+    width: $tablet-width;
+  }
+
+  .page-main__banner {
+    padding-top: 100px;
+
+    min-height: 226px;
+
+    &--stock {
+      padding-top: 160px;
+
+      min-height: 746px;
+    }
+  }
+
+  .page-main__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .page-main__promo {
+    padding-left: 52px;
+    padding-right: 52px;
+  }
+
+  .page-main__about {
+    padding-top: 60px;
+    padding-left: 52px;
+    padding-bottom: 80px;
+    padding-right: 52px;
+  }
+
+  .page-main__categories {
+    width: 668px;
+    margin: 0 auto;
+  }
+
+  .page-main__catalog {
+    padding-top: 67px;
+    padding-left: 52px;
+    padding-bottom: 63px;
+    padding-right: 52px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main {
+    width: $desktop-width;
+  }
+
+  .page-main__categories {
+    width: 1050px;
+  }
+
+  .page-main__promo {
+    padding-top: 110px;
+    padding-left: 225px;
+    // padding-right: 225px; /* we'll see :D TODO */
+  }
+
+  .page-main__catalog {
+    padding-top: 110px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .page-main__about {
+    padding-left: 225px;
+    padding-right: 225px;
+  }
 }
