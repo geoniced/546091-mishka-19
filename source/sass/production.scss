@@ -1,11 +1,19 @@
 .production {
+  position: relative;
+
   display: flex;
   flex-direction: column;
+  padding-top: 96px;
 
   border: 1px solid $gray;
 }
 
 .production__title {
+  position: absolute;
+  top: 25px;
+  left: 91px;
+
+  width: 130px;
   margin: 0;
   padding: 0;
 
@@ -19,10 +27,34 @@
 }
 
 @media (min-width: $tablet-width) {
+  .production {
+    padding-top: 0;
+  }
+
+  .production__title {
+    position: static;
+    top: auto;
+    left: auto;
+
+    width: auto;
+  }
+
   .production__video {
     order: -1;
 
     // Тоже временно, пока картинку не начну большую юзать
     min-height: 445px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .production {
+    flex-direction: row;
+  }
+
+  .production__video {
+    flex-shrink: 0;
+    width: 682px;
+    height: 445px;
   }
 }
