@@ -12,12 +12,41 @@
 }
 
 .form__label {
+  display: block;
+
   font-size: 17px;
   line-height: 18px;
   font-weight: bold;
+
+  &--checkbox {
+    margin-bottom: 20px;
+    padding-left: 62px;
+  }
+
+  &--radio {
+    margin-bottom: 20px;
+    padding-left: 62px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .form__input {
+  margin: 0;
+  margin-bottom: 20px;
+
+  border: 0;
+  border-bottom: 2px solid $black;
+
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.form__textarea {
+  border: 2px solid $black;
+
   font-size: 17px;
   line-height: 18px;
 }
@@ -26,4 +55,77 @@
   font-size: 14px;
   line-height: 16px;
   color: $charcoal;
+}
+
+.form__controls {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .form__field {
+    position: relative;
+
+    margin: 0;
+    padding-top: 50px;
+    padding-left: 160px;
+    padding-bottom: 50px;
+
+    border: none;
+  }
+
+  .form__field-name {
+    position: absolute;
+    top: 50px;
+    left: 0;
+  }
+
+  .form__wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    &--row {
+      flex-direction: row;
+    }
+  }
+
+  .form__label {
+    min-height: 32px;
+
+    font-size: 19px;
+
+    &--checkbox {
+      width: 50%;
+    }
+  }
+
+  .form__input {
+    font-size: 19px;
+  }
+
+  .form__textarea {
+    font-size: 19px;
+  }
+
+  .form__controls {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .form__hint {
+    order: 1;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+  .form__label {
+    &--checkbox {
+      width: 33%;
+    }
+  }
 }

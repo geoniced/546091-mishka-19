@@ -1,4 +1,16 @@
 .knitting__description {
+  margin: 0;
+  margin-bottom: 30px;
+
   font-size: 13px;
   color: $charcoal;
+}
+
+@media (min-width: $tablet-width) {
+  .knitting__description {
+    margin-bottom: 60px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
 }
