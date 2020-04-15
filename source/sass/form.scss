@@ -11,26 +11,29 @@
   text-transform: uppercase;
 }
 
-.form__label {
+// Если дальше стили будут различаться – вынесу в отдельные
+.form__label,
+.form__radio-label,
+.form__checkbox-label {
   display: block;
 
   font-size: 17px;
   line-height: 18px;
   font-weight: bold;
 
-  &--checkbox {
-    margin-bottom: 20px;
-    padding-left: 62px;
-  }
-
-  &--radio {
-    margin-bottom: 20px;
-    padding-left: 62px;
-  }
-
   &:last-child {
     margin-bottom: 0;
   }
+}
+
+.form__radio-label {
+  margin-bottom: 20px;
+  padding-left: 62px;
+}
+
+.form__checkbox-label {
+  margin-bottom: 20px;
+  padding-left: 62px;
 }
 
 .form__input {
@@ -90,14 +93,16 @@
     }
   }
 
-  .form__label {
+  .form__label,
+  .form__radio-label,
+  .form__checkbox-label {
     min-height: 32px;
 
     font-size: 19px;
+  }
 
-    &--checkbox {
-      width: 50%;
-    }
+  .form__checkbox-label {
+    width: 50%;
   }
 
   .form__input {
@@ -122,9 +127,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .form__label {
-    &--checkbox {
-      width: 33%;
-    }
+  .form__checkbox-label {
+    width: 33%;
   }
 }
