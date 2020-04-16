@@ -62,7 +62,9 @@
 }
 
 .page-main__knitting {
+  padding-top: 30px;
   padding-left: 30px;
+  padding-bottom: 30px;
   padding-right: 30px;
 }
 
@@ -109,6 +111,12 @@
     padding-top: 67px;
     padding-left: 52px;
     padding-bottom: 63px;
+    padding-right: 52px;
+  }
+
+  .page-main__knitting {
+    padding-top: 60px;
+    padding-left: 52px;
     padding-right: 52px;
   }
 }

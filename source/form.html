@@ -63,67 +63,84 @@
 
           <fieldset class="form__field">
             <legend class="form__field-name">Тип</legend>
-            <label class="form__label">
-              Аксессуар для интерьера <input class="form__radio" type="radio" name="knitting__type" value="accessory" checked>
-            </label>
-            <label class="form__label">
-              Детская игрушка <input class="form__radio" type="radio" name="knitting__type" value="children-toy">
-            </label>
+            <div class="form__wrapper">
+              <label class="form__radio-label">
+                Аксессуар для интерьера <input class="form__radio" type="radio" name="knitting__type" value="accessory" checked>
+              </label>
+              <label class="form__radio-label">
+                Детская игрушка <input class="form__radio" type="radio" name="knitting__type" value="children-toy">
+              </label>
+            </div>
           </fieldset>
 
           <fieldset class="form__field">
             <legend class="form__field-name">Цвет</legend>
 
-            <label class="form__label">
-              Белый <input class="form__checkbox" type="checkbox" name="knitting__color" value="white" checked>
-            </label>
-            <label class="form__label">
-              Серый <input class="form__checkbox" type="checkbox" name="knitting__color" value="gray" checked>
-            </label>
-            <label class="form__label">
-              «Тиффани» <input class="form__checkbox" type="checkbox" name="knitting__color" value="tiffany">
-            </label>
-            <label class="form__label">
-              Черный <input class="form__checkbox" type="checkbox" name="knitting__color" value="black">
-            </label>
-            <label class="form__label">
-              Розовый <input class="form__checkbox" type="checkbox" name="knitting__color" value="pink">
-            </label>
-            <label class="form__label">
-              Оранжевый <input class="form__checkbox" type="checkbox" name="knitting__color" value="orange">
-            </label>
+            <div class="form__wrapper form__wrapper--row">
+              <label class="form__checkbox-label">
+                Белый <input class="form__checkbox" type="checkbox" name="knitting__color" value="white" checked>
+              </label>
+              <label class="form__checkbox-label">
+                Серый <input class="form__checkbox" type="checkbox" name="knitting__color" value="gray" checked>
+              </label>
+              <label class="form__checkbox-label">
+                «Тиффани» <input class="form__checkbox" type="checkbox" name="knitting__color" value="tiffany">
+              </label>
+              <label class="form__checkbox-label">
+                Черный <input class="form__checkbox" type="checkbox" name="knitting__color" value="black">
+              </label>
+              <label class="form__checkbox-label">
+                Розовый <input class="form__checkbox" type="checkbox" name="knitting__color" value="pink">
+              </label>
+              <label class="form__checkbox-label">
+                Оранжевый <input class="form__checkbox" type="checkbox" name="knitting__color" value="orange">
+              </label>
+            </div>
           </fieldset>
 
           <fieldset class="form__field">
             <legend class="form__field-name">ФИО</legend>
 
-            <label class="form__label" for="knitting__first-name">Имя:</label>
-            <input class="form__input" type="text" name="knitting__first-name" id="knitting__first-name" placeholder="Введите ваше имя*">
+            <div class="form__wrapper">
+              <label class="form__label" for="knitting__first-name">Имя:</label>
+              <input class="form__input" type="text" name="knitting__first-name" id="knitting__first-name" placeholder="Введите ваше имя*">
 
-            <label class="form__label" for="knitting__second-name">Фамилия:</label>
-            <input class="form__input" type="text" name="knitting__second-name" id="knitting__second-name" placeholder="Укажите фамилию*">
+              <label class="form__label" for="knitting__second-name">Фамилия:</label>
+              <input class="form__input" type="text" name="knitting__second-name" id="knitting__second-name" placeholder="Укажите фамилию*">
 
-            <label class="form__label" for="knitting__middle-name">Отчество:</label>
-            <input class="form__input" type="text" name="knitting__middle-name" id="knitting__middle-name" placeholder="Отчество, если желаете">
+              <label class="form__label" for="knitting__middle-name">Отчество:</label>
+              <input class="form__input" type="text" name="knitting__middle-name" id="knitting__middle-name" placeholder="Отчество, если желаете">
+            </div>
           </fieldset>
 
           <fieldset class="form__field">
             <legend class="form__field-name">Тел</legend>
-            <input class="form__input" type="phone" name="knitting__phone" id="knitting__phone" placeholder="+7 XXX XXX XX XX*">
+
+            <div class="form__wrapper">
+              <input class="form__input" type="phone" name="knitting__phone" id="knitting__phone" placeholder="+7 XXX XXX XX XX*">
+            </div>
           </fieldset>
 
           <fieldset class="form__field">
             <legend class="form__field-name">E-mail</legend>
-            <input class="form__input" type="email" name="knitting__email" id="knitting__email" placeholder="Ваш Email*">
+
+            <div class="form__wrapper">
+              <input class="form__input" type="email" name="knitting__email" id="knitting__email" placeholder="Ваш Email*">
+            </div>
           </fieldset>
 
           <fieldset class="form__field">
             <legend class="form__field-name">Доп</legend>
-            <textarea class="form__textarea" name="knitting__additional" id="knitting__additional" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+
+            <div class="form__wrapper">
+              <textarea class="form__textarea" name="knitting__additional" id="knitting__additional" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            </div>
           </fieldset>
 
-          <small class="form__hint"><sup>*</sup>Поля обязательны для заполнения</small>
-          <button class="form__order button" type="submit">Отправить заказ</button>
+          <div class="form__controls">
+            <small class="form__hint"><sup>*</sup>Поля обязательны для заполнения</small>
+            <button class="form__order button" type="submit">Отправить заказ</button>
+          </div>
         </form>
       </section>
     </main>
