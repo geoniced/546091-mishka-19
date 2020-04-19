@@ -3,13 +3,6 @@
 
   width: $mobile-width;
   margin: 0 auto;
-
-  min-height: 395px; // 79px; wrapped
-}
-
-.page-header__menu {
-  /* ВРЕМЕННО, ЧТОБЫ НЕ МЕШАЛ ПОКА */
-  display: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -17,7 +10,7 @@
     display: flex;
     width: $tablet-width;
 
-    min-height: 80px;
+    min-height: 88px;
   }
 }
 
