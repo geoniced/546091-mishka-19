@@ -1,9 +1,26 @@
+.social {
+  display: flex;
+  justify-content: center;
+}
+
 .social__list {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 140px;
 
   @include list-style-reset;
 }
 
 .social__link {
   color: $black;
+}
+
+.social__link:hover path,
+.social__link:focus path {
+  fill: $puerto-rico;
+}
+
+.social__link:active path {
+  fill-opacity: 0.3;
 }
