@@ -1,9 +1,41 @@
 .copyright__info {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding-top: 25px;
+
   font-size: 19px;
   line-height: 18px;
   font-weight: bold;
 }
 
 .copyright__link {
+  display: flex;
+  align-items: center;
+
   color: $black;
+  text-decoration: none;
+
+  &:active {
+    color: $black-30;
+  }
+}
+
+.copyright__logo {
+  width: 27px;
+  height: 34px;
+  margin-left: 30px;
+
+  path {
+    fill: $seafoam-blue;
+  }
+}
+
+.copyright__logo:hover path,
+.copyright__logo:focus path {
+  fill: $puerto-rico;
+}
+
+.copyright__logo:active path {
+  fill-opacity: 0.3;
 }
