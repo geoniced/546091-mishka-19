@@ -17,6 +17,19 @@
   border-bottom: 1px solid $whisper;
 }
 
+.page-footer__logo {
+  display: none;
+}
+
+.page-footer__logo:hover path,
+.page-footer__logo:focus path {
+  fill: $puerto-rico;
+}
+
+.page-footer__logo:active path {
+  fill-opacity: 0.3;
+}
+
 @media (min-width: $tablet-width) {
   .page-footer {
     flex-direction: row;
@@ -25,6 +38,21 @@
     /* на макете видны по бокам пиксельные отступы */
     width: 768px;
     margin: 0 auto;
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+  }
+
+  .page-footer__social {
+    padding-bottom: 0;
+    border: none;
+  }
+
+  .page-footer__logo {
+    display: block;
+    width: 102px;
+    height: 34px;
   }
 }
 
