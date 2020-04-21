@@ -69,7 +69,7 @@
 
 @media (min-width: $tablet-width) {
   .categories {
-    transform: translateY(-100%);
+    margin-top: -119px;
   }
 
   .categories__list {
@@ -78,5 +78,14 @@
 
   .categories__item {
     width: 50%;
+  }
+
+  .categories__link {
+    padding-top: 28px;
+    padding-bottom: 31px;
+    padding-left: 36px;
+
+    font-size: 20px;
+    line-height: 30px;
   }
 }

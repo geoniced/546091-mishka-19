@@ -32,7 +32,7 @@
 }
 
 .page-main__promo {
-  padding-top: 30px;
+  padding-top: 28px;
   padding-left: 30px;
   padding-bottom: 30px;
   padding-right: 30px;
@@ -81,7 +81,7 @@
     min-height: 226px;
 
     &--stock {
-      padding-top: 160px;
+      padding-top: 155px;
 
       min-height: 746px;
     }
@@ -93,7 +93,8 @@
   }
 
   .page-main__promo {
-    padding-left: 52px;
+    padding-top: 45px;
+    padding-left: 51px;
     padding-right: 52px;
   }
 
@@ -128,12 +129,17 @@
     width: $desktop-width;
   }
 
+  .page-main__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
   .page-main__categories {
     width: 1050px;
   }
 
   .page-main__promo {
-    padding-top: 110px;
+    padding-top: 123px;
     padding-left: 225px;
     // padding-right: 225px; /* we'll see :D TODO */
   }
