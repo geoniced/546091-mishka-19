@@ -15,16 +15,57 @@
   height: 195px;
 }
 
+.card__card-wrapper {
+  padding-top: 26px;
+  padding-left: 28px;
+  padding-bottom: 27px;
+  padding-right: 28px;
+}
+
 .card__link {
   color: $black;
   font-weight: bold;
   text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $black-60;
+  }
+
+  &:active {
+    color: $black-30;
+  }
+}
+
+.card__description {
+  padding-bottom: 19px;
+
+  // А сама идея делать такого рода бордеры нормальна?
+  border-bottom: 1px solid $white-two;
+}
+
+.card__title {
+  margin: 0;
+  margin-bottom: 5px;
+  padding: 0;
+
+  font-size: 17px;
+  line-height: 24px;
 }
 
 .card__details {
+  margin: 0;
+
   color: $charcoal;
   font-size: 13px;
   line-height: 30px;
+}
+
+.card__order {
+  display: flex;
+  justify-content: space-between;
+
+  padding-top: 21px;
 }
 
 .card__price {
@@ -32,12 +73,23 @@
   font-weight: bold;
 }
 
-.card__title {
-  margin: 0;
-  padding: 0;
+.card__cart:hover path,
+.card__cart:focus path {
+  fill: $seafoam-blue;
+  fill-opacity: 1;
+}
 
-  font-size: 17px;
-  line-height: 24px;
+.card__cart:active path {
+  fill-opacity: 0.3;
+}
+
+.card__cart-icon {
+  width: 21px;
+  height: 18px;
+
+  path {
+    fill-opacity: 0.2;
+  }
 }
 
 @media (min-width: $tablet-width) {
