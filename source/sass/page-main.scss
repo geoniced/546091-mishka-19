@@ -76,7 +76,7 @@
   }
 
   .page-main__banner {
-    padding-top: 100px;
+    padding-top: 96px;
 
     min-height: 226px;
 
@@ -114,10 +114,10 @@
   }
 
   .page-main__catalog {
-    padding-top: 67px;
-    padding-left: 52px;
+    padding-top: 79px;
+    padding-left: 51px;
     padding-bottom: 63px;
-    padding-right: 52px;
+    padding-right: 54px;
   }
 
   .page-main__knitting {
@@ -130,6 +130,10 @@
 @media (min-width: $desktop-width) {
   .page-main {
     width: $desktop-width;
+  }
+
+  .page-main__banner {
+    min-height: 255px;
   }
 
   .page-main__title {
@@ -148,9 +152,9 @@
   }
 
   .page-main__catalog {
-    padding-top: 110px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-top: 128px;
+    padding-left: 49px;
+    padding-right: 47px;
   }
 
   .page-main__about {

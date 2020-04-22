@@ -1,8 +1,6 @@
 .card {
   display: flex;
   flex-direction: column;
-
-  border: 1px solid $gray;
 }
 
 .card__preview {
@@ -16,10 +14,14 @@
 }
 
 .card__card-wrapper {
+  flex-grow: 1;
   padding-top: 26px;
   padding-left: 28px;
   padding-bottom: 27px;
   padding-right: 28px;
+
+  border: 1px solid $gray;
+  background-color: $white;
 }
 
 .card__link {
@@ -39,9 +41,6 @@
 
 .card__description {
   padding-bottom: 19px;
-
-  // А сама идея делать такого рода бордеры нормальна?
-  border-bottom: 1px solid $white-two;
 }
 
 .card__title {
@@ -64,13 +63,22 @@
 .card__order {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   padding-top: 21px;
+  // А сама идея делать такого рода бордеры нормальна?
+  border-top: 1px solid #ececec;
 }
 
 .card__price {
   font-size: 15px;
   font-weight: bold;
+}
+
+.card__cart {
+  position: relative;
+  width: 24px;
+  height: 24px;
 }
 
 .card__cart:hover path,
@@ -84,6 +92,10 @@
 }
 
 .card__cart-icon {
+  position: absolute;
+  top: 2px;
+  left: 6px;
+
   width: 21px;
   height: 18px;
 
@@ -97,16 +109,68 @@
     flex-direction: row;
   }
 
+  .card__preview {
+    flex-shrink: 0;
+  }
+
   .card__preview-image {
     /* Это временно, пока я не сделаю картинки под планшет+десктоп
       а то они в мобильной версии ландшафтом идут, а планшет+ идет портретом
     */
-    min-height: 334px;
+    width: 334px;
+    height: 334px;
+  }
+
+  .card__title {
+    font-size: 20px;
+  }
+
+  .card__details {
+    font-size: 15px;
+  }
+
+  .card__card-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 316px;
+    padding-left: 25px;
+  }
+
+  .card__description {
+    padding-bottom: 0;
+  }
+
+  .card__order {
+    margin-top: auto;
+  }
+
+  .card__price {
+    padding-left: 5px;
+    font-size: 17px;
+  }
+
+  .card__cart-icon {
+    left: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .card {
     flex-direction: column;
+  }
+
+  .card__preview-image {
+    width: 316px;
+    height: 462px;
+  }
+
+  .card__card-wrapper {
+    min-height: 197px;
+    padding-top: 25px;
+    padding-left: 27px;
+  }
+
+  .card__price {
+    padding-left: 0;
   }
 }
