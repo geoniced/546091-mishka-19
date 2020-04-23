@@ -15,30 +15,82 @@
   font-weight: bold;
 }
 
+.about__item {
+  position: relative;
+  padding-top: 56px;
+  margin-bottom: 27px;
+}
+
+.about__icon {
+  position: absolute;
+
+  path {
+    fill: $seafoam-blue;
+  }
+
+  &--flower {
+    top: 2px;
+    left: 10px;
+  }
+
+  &--cash {
+    top: 2px;
+    left: 2px;
+  }
+
+  &--heart {
+    top: 8px;
+    left: 9px;
+  }
+
+  &--clew {
+    top: 5px;
+    left: 5px;
+  }
+
+  &--rocket {
+    top: 6px;
+    left: -4px;
+  }
+
+  &--present {
+    top: 4px;
+    left: 5px;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .about__title {
-    margin-bottom: 50px;
+    margin-bottom: 47px;
 
-    font-size: 53px;
-    line-height: 57px;
+    font-size: 43px;
+    line-height: 50px;
   }
 
   .about__list {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    max-height: 420px;
 
-    // TODO: remove
-    max-height: 400px;
+    font-size: 20px;
+    line-height: 22px;
   }
 
   .about__item {
     width: 300px;
     min-height: 60px;
-    margin-bottom: 60px;
+    margin-bottom: 55px;
 
     &:nth-child(3n) {
       margin-bottom: 0;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about__title {
+    font-size: 53px;
+    line-height: 57px;
   }
 }

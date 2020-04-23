@@ -1,5 +1,5 @@
 .main-nav {
-  min-height: 316px;
+  position: relative;
 }
 
 .main-nav__logo {
@@ -7,9 +7,18 @@
   justify-content: center;
 
   padding-top: 22px;
-  padding-bottom: 15px;
+  padding-bottom: 22px;
 
   border-bottom: 1px solid $white-two;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .main-nav__info {
@@ -24,12 +33,77 @@
   }
 }
 
+@media (max-width: $mobile-width-only) {
+  .main-nav {
+    margin-top: 79px;
+  }
+
+  .main-nav__wrapper {
+    position: absolute;
+    top: -79px;
+
+    width: 100%;
+    background-color: $white;
+  }
+
+  .main-nav--closed .main-nav__list {
+    display: none;
+  }
+
+  .main-nav__menu {
+    position: absolute;
+    top: -45px;
+    right: 32px;
+    z-index: 1;
+
+    width: 20px;
+    height: 14px;
+
+    border: none;
+
+    background-color: transparent;
+    background-image: url("../img/icon-menu-open.svg");
+    background-repeat: no-repeat;
+  }
+
+  .main-nav--opened .main-nav__menu {
+    width: 21px;
+    height: 20px;
+
+    background-image: url("../img/icon-menu-close.svg");
+  }
+
+  .main-nav--opened .main-nav__list:not(.main-nav__list--secondary) {
+    display: block;
+  }
+
+  .main-nav--no-js {
+    margin-top: 0;
+  }
+
+  .main-nav--no-js .main-nav__menu {
+    display: none;
+  }
+
+  .main-nav--no-js .main-nav__wrapper {
+    position: static;
+    top: auto;
+  }
+
+  .main-nav--no-js .main-nav__list:not(.main-nav__list--secondary) {
+    display: block;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .main-nav {
     // для того, чтобы блоки списков как будто "выпадали"
     // из потока хедера и свисали под ним
-    height: 80px;
-    min-height: 80px;
+    height: 88px;
+  }
+
+  .main-nav__menu {
+    display: none;
   }
 
   .main-nav__wrapper {
@@ -38,20 +112,21 @@
     flex-wrap: wrap;
 
     padding-left: 50px;
-    // padding-right: 50px; Оставлю до времени, когда буду делать иконками user-list
+    padding-right: 50px;
   }
 
   .main-nav__logo {
     justify-content: flex-start;
-    width: 370px;
+    width: 322px;
+    padding-top: 27px;
+    padding-bottom: 26px;
+
     border: none;
   }
 
   .main-nav__list {
     display: flex;
     flex-grow: 1;
-
-    padding-top: 20px;
 
     &--secondary {
       display: none;
@@ -60,6 +135,8 @@
     &:first-of-type {
       order: 1;
 
+      font-size: 15px;
+      line-height: 24px;
       border: none;
     }
   }
@@ -69,7 +146,7 @@
     order: 3;
 
     margin: 0;
-    padding-top: 20px;
+    padding-top: 18px;
 
     font-size: 15px;
     color: $charcoal;
@@ -84,10 +161,14 @@
   .main-nav__list {
     &--secondary {
       display: flex;
+      font-size: 15px;
+      line-height: 24px;
     }
 
     &:first-of-type {
       order: -1;
+
+      font-size: 17px;
     }
   }
 }

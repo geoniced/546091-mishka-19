@@ -1,11 +1,15 @@
 /* Media sizes */
 $mobile-width: 320px;
+$mobile-width-only: 771px;
+
 $tablet-width: 772px;
 $desktop-width: 1150px;
 
 
 /* Colors */
 $black: #000000;
+$black-60: rgba(0, 0, 0, 0.6);
+$black-30: rgba(0, 0, 0, 0.3);
 $very-dark-brown: #010000;
 $charcoal: #444444;
 $gray: #f1f1f1;
@@ -13,6 +17,9 @@ $lightgray: #ededed;
 
 $white: #ffffff;
 $white-two: #ececec;
+$whisper: #e5e5e5;
 
 $seafoam-blue: #63d1bb;
 $greeny-blue: #56c3b2;
+$puerto-rico: #46c1ae;
+$pine-green: #149080;

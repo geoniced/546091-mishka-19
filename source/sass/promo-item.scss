@@ -3,16 +3,18 @@
 }
 
 .promo-item__heading {
-  margin-bottom: 25px;
+  margin-bottom: 23px;
 }
 
 .promo-item__title {
   margin: 0;
+  margin-bottom: 4px;
   padding: 0;
 
   font-size: 25px;
   line-height: 30px;
   font-weight: bold;
+  letter-spacing: -0.3px;
 }
 
 .promo-item__promo {
@@ -27,6 +29,7 @@
 
 .promo-item__description {
   margin: 0;
+  margin-bottom: 17px;
   padding: 0;
 
   font-size: 15px;
@@ -34,6 +37,9 @@
 }
 
 .promo-item__details {
+  width: 100%;
+  margin-bottom: 26px;
+
   border-collapse: collapse;
 
   font-size: 15px;
@@ -45,7 +51,27 @@
   border-bottom: 1px solid $lightgray;
 }
 
+.promo-item__property {
+  width: 96px;
+}
+
+.promo-item__property,
+.promo-item__value {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.promo-item__image {
+  display: block;
+  width: 260px;
+  height: 315px;
+  margin-bottom: 24px;
+}
+
 .promo-item__price {
+  margin: 0;
+  margin-bottom: 26px;
+
   text-align: center;
   color: $charcoal;
   font-weight: bold;
@@ -59,7 +85,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 55px;
+    margin-bottom: 45px;
+    padding-right: 21px;
   }
 
   .promo-item__title {
@@ -70,16 +97,28 @@
   .promo-item__promo {
     max-width: 80px;
 
+    line-height: 17px;
     text-align: center;
   }
 
   .promo-item__wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: space-between; // TODO: временно или нет? хм
+    // justify-content: space-between; // TODO: временно или нет? хм
 
     max-width: 292px;
-    min-height: 404px;
+    min-height: 412px;
+  }
+
+  .promo-item__description {
+    margin-bottom: 35px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .promo-item__details {
+    margin-bottom: 54px;
   }
 
   .promo-item__image {
@@ -91,19 +130,55 @@
     // TODO По классике, пока картинку не сделал сделаю ей размеры временно
     width: 333px;
     height: 404px;
+    margin-bottom: 0;
+  }
+
+  .promo-item__price {
+    font-size: 20px;
+  }
+
+  .promo-item__order {
+    margin-top: auto;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .promo-item__wrapper {
-    max-width: 292px; // (350 total) for image sake
-    min-height: 470px;
+  .promo-item__heading {
+    padding-right: 0;
+  }
+
+  .promo-item__title {
+    font-size: 53px;
+    line-height: 57px;
   }
 
   .promo-item__promo {
     position: absolute;
-    left: -150px;
+    left: -132px;
   }
+
+  .promo-item__wrapper {
+    max-width: 292px; // (350 total) for image sake
+    min-height: 478px;
+  }
+
+  .promo-item__description {
+    margin-bottom: 47px;
+  }
+
+  .promo-item__details {
+    margin-bottom: auto;
+  }
+
+  .promo-item__price {
+    margin-top: 0;
+    margin-bottom: 34px;
+  }
+
+  .promo-item__order {
+    margin-top: 0;
+  }
+
 
   .promo-item__image {
     // TODO По классике, пока картинку не сделал сделаю ей размеры временно
