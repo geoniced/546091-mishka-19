@@ -52,8 +52,10 @@
 }
 
 .page-main__contacts {
+  padding-top: 86px;
   padding-left: 30px;
   padding-right: 30px;
+  padding-bottom: 30px;
 }
 
 .page-main__catalog {
@@ -120,6 +122,12 @@
     padding-right: 73px;
   }
 
+  .page-main__contacts {
+    padding-top: 45px;
+    padding-left: 51px;
+    padding-right: 52px;
+  }
+
   .page-main__catalog {
     padding-top: 79px;
     padding-left: 51px;
@@ -160,6 +168,12 @@
     padding-top: 123px;
     padding-left: 225px;
     // padding-right: 225px; /* we'll see :D TODO */
+  }
+
+  .page-main__contacts {
+    padding-top: 150px;
+    padding-left: 225px;
+    padding-bottom: 105px;
   }
 
   .page-main__catalog {
