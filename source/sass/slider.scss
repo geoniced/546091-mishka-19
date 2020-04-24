@@ -1,1 +1,45 @@
-$remove-me: 1;
+.slider__controls {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  height: 52px;
+}
+
+.slider__toggle {
+  flex-grow: 1;
+  padding: 0;
+
+  border: 1px solid $white-two;
+  background-color: $white;
+
+  &:last-child {
+    border-left: none;
+  }
+}
+
+.slider__toggle:hover polygon,
+.slider__toggle:focus polygon {
+  fill-opacity: 0.6;
+}
+
+.slider__toggle:active polygon {
+  fill-opacity: 0.3;
+}
+
+@media (min-width: $tablet-width) {
+  .slider__toggle {
+    /* Чувствую, что здесь я не совсем правильно делаю,
+       и оформление slider__toggle должно быть задано в рамках
+       блока reviews... Но может у меня такое мнение лишь из-за того, что у нас лишь один
+       слайдер по всему сайту
+    */
+    border: none;
+    flex-grow: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider__controls {
+    height: 55px;
+  }
+}
