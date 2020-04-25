@@ -2,9 +2,6 @@
   margin: 0;
   margin-bottom: 24px;
 
-  padding-left: 52px;
-  padding-right: 52px;
-
   font-size: 13px;
   color: $charcoal;
 }
@@ -12,6 +9,8 @@
 @media (min-width: $tablet-width) {
   .knitting__description {
     margin-bottom: 6px;
+    padding-left: 52px;
+    padding-right: 52px;
 
     font-size: 17px;
     line-height: 30px;
