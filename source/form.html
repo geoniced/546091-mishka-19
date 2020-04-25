@@ -84,7 +84,7 @@
             </div>
           </fieldset>
 
-          <fieldset class="form__field">
+          <fieldset class="form__field form__field--gray">
             <legend class="form__field-name">Цвет</legend>
 
             <div class="form__wrapper form__wrapper--row">
@@ -112,18 +112,22 @@
             <legend class="form__field-name">ФИО</legend>
 
             <div class="form__wrapper">
-              <label class="form__label" for="knitting__first-name">Имя:</label>
-              <input class="form__input" type="text" name="knitting__first-name" id="knitting__first-name" placeholder="Введите ваше имя*">
-
-              <label class="form__label" for="knitting__second-name">Фамилия:</label>
-              <input class="form__input" type="text" name="knitting__second-name" id="knitting__second-name" placeholder="Укажите фамилию*">
-
-              <label class="form__label" for="knitting__middle-name">Отчество:</label>
-              <input class="form__input" type="text" name="knitting__middle-name" id="knitting__middle-name" placeholder="Отчество, если желаете">
+              <div class="form__grouped-fields">
+                <label class="form__label" for="knitting__first-name">Имя:</label>
+                <input class="form__input" type="text" name="knitting__first-name" id="knitting__first-name" placeholder="Введите ваше имя*">
+              </div>
+              <div class="form__grouped-fields">
+                <label class="form__label" for="knitting__second-name">Фамилия:</label>
+                <input class="form__input" type="text" name="knitting__second-name" id="knitting__second-name" placeholder="Укажите фамилию*">
+              </div>
+              <div class="form__grouped-fields">
+                <label class="form__label" for="knitting__middle-name">Отчество:</label>
+                <input class="form__input" type="text" name="knitting__middle-name" id="knitting__middle-name" placeholder="Отчество, если желаете">
+              </div>
             </div>
           </fieldset>
 
-          <fieldset class="form__field form__field--no-label">
+          <fieldset class="form__field form__field--no-label form__field--gray">
             <legend class="form__field-name">Тел</legend>
 
             <div class="form__wrapper">
@@ -143,7 +147,7 @@
             </div>
           </fieldset>
 
-          <fieldset class="form__field form__field--no-label">
+          <fieldset class="form__field form__field--no-label form__field--gray">
             <legend class="form__field-name form__field-name--extended">E-mail</legend>
 
             <div class="form__wrapper">

@@ -96,6 +96,7 @@
   &::before {
     content: "";
     position: absolute;
+    top: 0;
     left: 0;
 
     width: 40px;
@@ -153,6 +154,7 @@
   &::before {
     content: "";
     position: absolute;
+    top: 0;
     left: 0;
 
     width: 40px;
@@ -184,11 +186,12 @@
 
   border: 0;
   border-bottom: 2px solid $black;
+  background-color: transparent;
 
   font-size: 17px;
   line-height: 18px;
 
-  &:last-child {
+  &:last-of-type {
     margin-bottom: 0;
   }
 }
@@ -225,18 +228,29 @@
   .form__field {
     position: relative;
 
+    width: $tablet-width;
     margin: 0;
     padding-top: 50px;
-    padding-left: 160px;
+    padding-right: 55px;
+
     padding-bottom: 50px;
+    padding-left: 216px;
 
     border: none;
+
+    &--no-label {
+      padding-bottom: 0;
+    }
+
+    &--gray {
+      background-color: $gray;
+    }
   }
 
   .form__field-name {
     position: absolute;
-    top: 50px;
-    left: 0;
+    top: 68px;
+    left: 52px;
   }
 
   .form__wrapper {
@@ -249,6 +263,22 @@
     }
   }
 
+  .form__grouped-fields {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 24px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .form__grouped-fields .form__label {
+    min-height: auto;
+    margin-right: 25px;
+  }
+
   .form__label,
   .form__radio-label,
   .form__checkbox-label {
@@ -257,11 +287,63 @@
     font-size: 19px;
   }
 
+  .form__radio-label {
+    min-height: 53px;
+    padding-left: 80px;
+
+    &::before {
+      width: 52px;
+      height: 52px;
+    }
+  }
+
+  .form__radio:checked + .form__radio-label::after {
+    top: 15px;
+    left: 15px;
+
+    width: 22px;
+    height: 22px;
+
+    background-size: 22px 22px;
+  }
+
+  .form__radio-label {
+    margin-bottom: 23px;
+  }
+
   .form__checkbox-label {
-    width: 50%;
+    width: 230px; // was: 50%
+    min-height: 52px;
+    padding-left: 81px;
+    margin-right: 32px;
+    margin-bottom: 24px;
+
+    &::before {
+      width: 54px;
+      height: 52px;
+    }
+
+    &:nth-of-type(2n) {
+      margin-right: 0;
+    }
+
+    &:nth-last-of-type(2) {
+      margin-bottom: 0;
+    }
+  }
+
+  .form__checkbox:checked + .form__checkbox-label::after {
+    top: 16px;
+    left: 11px;
+
+    width: 33px;
+    height: 22px;
+
+    background-size: 33px 22px;
   }
 
   .form__input {
+    padding-left: 18px;
     font-size: 19px;
   }
 
