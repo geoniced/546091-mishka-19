@@ -56,7 +56,16 @@
 
   color: $charcoal;
   text-decoration: none;
-  border-bottom: 1px solid $seafoam-blue;
+  border-bottom: 1px solid $puerto-rico;
+
+  &:hover,
+  &:focus {
+    color: $puerto-rico;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .contacts__address {

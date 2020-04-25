@@ -4,14 +4,21 @@
   display: flex;
   flex-direction: column;
   padding-top: 96px;
+}
+
+.production__wrapper {
+  padding-top: 22px;
+  padding-right: 33px;
+  padding-bottom: 32px;
+  padding-left: 33px;
 
   border: 1px solid $gray;
 }
 
 .production__title {
   position: absolute;
-  top: 25px;
-  left: 91px;
+  top: 24px;
+  left: 90px;
 
   width: 130px;
   margin: 0;
@@ -21,9 +28,26 @@
   line-height: 24px;
 }
 
+.production__icon {
+  position: absolute;
+  top: 5px;
+  left: -57px;
+
+  path {
+    fill: $seafoam-blue;
+  }
+}
+
 .production__description {
+  margin: 0;
+  margin-bottom: 25px;
+
   font-size: 13px;
   line-height: 24px;
+}
+
+.production__video-preview {
+  display: block;
 }
 
 @media (min-width: $tablet-width) {
@@ -31,19 +55,43 @@
     padding-top: 0;
   }
 
+  .production__wrapper {
+    padding-top: 38px;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
   .production__title {
-    position: static;
+    position: relative;
     top: auto;
     left: auto;
 
     width: auto;
+    margin-bottom: 32px;
+    padding-left: 65px;
+
+    font-size: 20px;
+  }
+
+  .production__icon {
+    top: -5px;
+    left: 1px;
+  }
+
+  .production__description {
+    margin-bottom: 35px;
+
+    font-size: 15px;
+    line-height: 30px;
   }
 
   .production__video {
     order: -1;
+  }
 
-    // Тоже временно, пока картинку не начну большую юзать
-    min-height: 445px;
+  .production__video-preview {
+    width: 668px;
+    height: 455px;
   }
 }
 
@@ -52,9 +100,30 @@
     flex-direction: row;
   }
 
+  .production__wrapper {
+    padding-top: 95px;
+    padding-right: 60px;
+    padding-left: 79px;
+  }
+
+  .production__title {
+    padding-left: 0;
+  }
+
+  .production__icon {
+    top: -54px;
+  }
+
+  .production__description {
+    margin-bottom: 47px;
+  }
+
   .production__video {
     flex-shrink: 0;
+  }
+
+  .production__video-preview {
     width: 682px;
-    height: 445px;
+    height: 455px;
   }
 }
