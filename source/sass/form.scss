@@ -1,14 +1,67 @@
 .form__field {
+  padding: 0;
+  padding-top: 25px;
+  margin: 0;
+  margin-bottom: 31px;
+
   border: none;
   border-top: 1px solid $seafoam-blue;
+
+  &--multiple-fields {
+    padding-top: 30px;
+  }
+
+  &--no-label {
+    padding-top: 7px;
+    margin-bottom: 10px;
+  }
+
+  &:last-of-type {
+    margin-bottom: 10px;
+  }
 }
 
 .form__field-name {
+  min-width: 63px;
+  margin-left: -1px;
+
   font-size: 17px;
   line-height: 16px;
   font-weight: bold;
   color: $seafoam-blue;
   text-transform: uppercase;
+
+  &--extended {
+    /* Небольшое рассуждение по этому коду:
+    Я подумал, что если я хочу иметь одинаковый отступ у всех
+    полосок, то пусть будет условность, что для коротких подписей
+    будет определенная ширина, если будет больше текст – делаю модификатор
+    у которого всего-лишь будет отступ указан и всё
+    */
+    padding-right: 24px;
+  }
+}
+
+.form__wrapper {
+  position: relative;
+}
+
+.form__icon {
+  position: absolute;
+
+  &--phone {
+    top: 11px;
+    right: 8px;
+  }
+
+  &--mail {
+    top: 11px;
+    right: 4px;
+  }
+
+  path {
+    fill-opacity: 0.2;
+  }
 }
 
 // Если дальше стили будут различаться – вынесу в отдельные
@@ -26,43 +79,146 @@
   }
 }
 
-.form__radio-label {
-  margin-bottom: 20px;
-  padding-left: 62px;
+.form__radio:focus + .form__radio-label,
+.form__checkbox:focus + .form__checkbox-label {
+  @include default-outline;
 }
 
-.form__checkbox-label {
+.form__radio-label {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  min-height: 40px;
   margin-bottom: 20px;
   padding-left: 62px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+
+    width: 40px;
+    height: 40px;
+
+    border: 2px solid $charcoal;
+    border-radius: 50%;
+  }
+}
+
+.form__radio:checked + .form__radio-label::after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 12px;
+
+  width: 16px;
+  height: 16px;
+
+  background-color: $seafoam-blue-two;
+  border-radius: 50%;
+}
+
+.form__radio:hover + .form__radio-label::before,
+.form__radio:focus + .form__radio-label::before,
+.form__checkbox:hover + .form__checkbox-label::before,
+.form__checkbox:focus + .form__checkbox-label::before,
+.form__textarea:hover,
+.form__textarea:focus {
+  border-color: $seafoam-blue-two;
+}
+
+.form__radio:active + .form__radio-label::before,
+.form__checkbox:active + .form__checkbox-label::before,
+.form__textarea:active {
+  border-color: rgba($charcoal, 0.3);
+}
+
+.form__input::placeholder,
+.form__textarea::placeholder {
+  opacity: 0.3;
+}
+
+// TODO: объединить это с radio и/или инпутами
+.form__checkbox-label {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  min-height: 39px;
+
+  margin-bottom: 22px;
+  padding-left: 62px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+
+    width: 40px;
+    height: 39px;
+
+    border: 2px solid $charcoal;
+  }
+}
+
+.form__checkbox:checked + .form__checkbox-label::after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 9px;
+
+  width: 22px;
+  height: 16px;
+
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-size: 22px 16px;
 }
 
 .form__input {
+  width: 100%;
+  height: 52px;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 
   border: 0;
   border-bottom: 2px solid $black;
 
   font-size: 17px;
   line-height: 18px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .form__textarea {
-  border: 2px solid $black;
+  width: 100%;
+  min-height: 142px;
+  padding: 15px 14px;
 
+  resize: none;
+  border: 2px solid $black;
   font-size: 17px;
   line-height: 18px;
-}
-
-.form__hint {
-  font-size: 14px;
-  line-height: 16px;
-  color: $charcoal;
 }
 
 .form__controls {
   display: flex;
   flex-direction: column;
+}
+
+.form__hint {
+  margin-bottom: 31px;
+
+  font-size: 14px;
+  line-height: 16px;
+  color: $charcoal;
+}
+
+.form__order {
+  min-height: 52px;
 }
 
 @media (min-width: $tablet-width) {
