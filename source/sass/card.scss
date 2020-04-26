@@ -3,6 +3,14 @@
   flex-direction: column;
 }
 
+.card:hover .card__card-wrapper {
+  box-shadow: 0 4px 8px 1px $gray;
+}
+
+.card:active .card__card-wrapper {
+  box-shadow: 0 2px 8px -2px $gray;
+}
+
 .card__preview {
   display: block;
 }
@@ -22,6 +30,7 @@
 
   border: 1px solid $gray;
   background-color: $white;
+  transition: box-shadow 0.15s;
 }
 
 .card__link {

@@ -8,11 +8,21 @@
   border: 1px solid $gray;
 }
 
+.production:hover .production__wrapper {
+  box-shadow: 0 4px 8px 1px $gray;
+}
+
+.production:active .production__wrapper {
+  box-shadow: 0 2px 8px -2px $gray;
+}
+
 .production__wrapper {
   padding-top: 27px;
   padding-right: 33px;
   padding-bottom: 32px;
   padding-left: 33px;
+
+  transition: box-shadow 0.15s;
 }
 
 .production__title {
