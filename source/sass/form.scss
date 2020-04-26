@@ -13,7 +13,6 @@
 
   &--no-label {
     padding-top: 7px;
-    margin-bottom: 10px;
   }
 
   &:last-of-type {
@@ -44,6 +43,14 @@
 
 .form__wrapper {
   position: relative;
+}
+
+.form__grouped-fields {
+  margin-bottom: 22px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
 .form__icon {
@@ -231,20 +238,41 @@
     width: $tablet-width;
     margin: 0;
     padding-top: 50px;
-    padding-right: 55px;
+    padding-right: 52px;
 
     padding-bottom: 50px;
-    padding-left: 216px;
+    padding-left: 219px;
 
     border: none;
 
-    &--no-label {
-      padding-bottom: 0;
+    &:last-of-type {
+      margin-bottom: 3px;
     }
+  }
 
-    &--gray {
-      background-color: $gray;
+  .form__gray-field {
+    // Нормально если я сделаю служебный класс в контексте формы
+    // как элемент?
+    background-color: $gray;
+  }
+
+  .form__grouped-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .form__grouped-container .form__field {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 24px;
+
+    &:last-of-type {
+      margin-bottom: 0;
     }
+  }
+
+  .form__grouped-container .form__field-name {
+    top: 17px;
   }
 
   .form__field-name {
@@ -345,22 +373,56 @@
   .form__input {
     padding-left: 18px;
     font-size: 19px;
+
+    &:hover,
+    &:focus {
+      border-color: $seafoam-blue-two;
+    }
+  }
+
+  .form__icon {
+    &--phone {
+      right: 26px;
+    }
+
+    &--mail {
+      right: 22px;
+    }
+  }
+
+  .form__input:hover + .form__icon path,
+  .form__input:focus + .form__icon path {
+    fill: $seafoam-blue-two;
+    fill-opacity: 1;
   }
 
   .form__textarea {
     font-size: 19px;
+
+    &:hover,
+    &:focus {
+      border-color: $seafoam-blue-two;
+    }
   }
 
   .form__controls {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    padding-left: 52px;
+    padding-right: 52px;
   }
 
   .form__hint {
     order: 1;
+    margin-bottom: 0;
 
     font-size: 17px;
     line-height: 30px;
+  }
+
+  .form__order {
+    min-width: 230px;
   }
 }
 
