@@ -1,1 +1,25 @@
-$remove-me: 4;
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+
+  width: 320px;
+  height: 336px;
+  padding-top: 35px;
+  padding-right: 30px;
+  padding-bottom: 45px;
+  padding-left: 30px;
+
+  background-color: $white;
+  border: 1px solid $silver;
+  transform: translateX(-50%) translateY(-50%);
+
+  &--opened {
+    display: block;
+  }
+
+  &--closed {
+    display: none;
+  }
+}
+
