@@ -1,6 +1,5 @@
 .button {
   display: block;
-  width: 100%;
   padding: 12px;
 
   color: $charcoal;
@@ -9,4 +8,14 @@
   text-transform: uppercase;
   text-decoration: none;
   border: 2px solid $charcoal;
+
+  &:hover,
+  &:focus {
+    color: $white;
+    background-color: $charcoal;
+  }
+
+  &:active {
+    color: $white-30;
+  }
 }

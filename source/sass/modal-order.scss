@@ -1,1 +1,31 @@
-$not-empty-3: 3;
+.modal-order__title {
+  margin: 0;
+
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.modal-order__choose {
+  margin: 0;
+
+  font-size: 15px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.modal-order__size-list {
+  @include list-style-reset;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-order__size-button {
+  width: 82px;
+  height: 52px;
+
+  border: 2px solid rgba($charcoal, 0.1);
+  background-color: white;
+}
