@@ -2,13 +2,18 @@
   position: relative;
 }
 
+.main-nav__wrapper {
+  padding-top: 1px;
+}
+
 .main-nav__logo {
   display: flex;
   justify-content: center;
 
-  padding-top: 22px;
-  padding-bottom: 22px;
+  padding-top: 20px;
+  padding-bottom: 15px;
 
+  border-top: 1px solid $white-two;
   border-bottom: 1px solid $white-two;
 
   &:hover,
@@ -52,18 +57,23 @@
 
   .main-nav__menu {
     position: absolute;
-    top: -45px;
-    right: 32px;
+    top: -60px;
+    right: 22px;
     z-index: 1;
 
     width: 20px;
     height: 14px;
+    // Это делаю исключительно из-за того, что
+    // иконка слишком маленькая и у неё аутлайн не красивый
+    // + область нажатия была мала
+    padding: 20px;
 
     border: none;
 
     background-color: transparent;
     background-image: url("../img/icon-menu-open.svg");
     background-repeat: no-repeat;
+    background-position: center;
   }
 
   .main-nav--opened .main-nav__menu {
@@ -99,7 +109,8 @@
   .main-nav {
     // для того, чтобы блоки списков как будто "выпадали"
     // из потока хедера и свисали под ним
-    height: 88px;
+    height: 89px;
+    border-bottom: 1px solid $black-10;
   }
 
   .main-nav__menu {
@@ -118,15 +129,19 @@
   .main-nav__logo {
     justify-content: flex-start;
     width: 322px;
-    padding-top: 27px;
-    padding-bottom: 26px;
+    padding-top: 21px;
+    padding-bottom: 14px;
 
     border: none;
   }
 
+  .main-nav__logo-image {
+    width: 112px;
+  }
+
   .main-nav__list {
     display: flex;
-    flex-grow: 1;
+    // flex-grow: 1;
 
     &--secondary {
       display: none;
@@ -146,6 +161,8 @@
     order: 3;
 
     margin: 0;
+    // Всегда будет отталкиваться вправо, чтобы при переполнении ок было
+    margin-left: auto;
     padding-top: 18px;
 
     font-size: 15px;
@@ -155,7 +172,14 @@
 
 @media (min-width: $desktop-width) {
   .main-nav__logo {
-    justify-content: center;
+    width: 327px;
+    padding-top: 8px;
+    padding-bottom: 0;
+    padding-left: 77px;
+  }
+
+  .main-nav__logo-image {
+    width: 149px;
   }
 
   .main-nav__list {

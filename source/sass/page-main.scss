@@ -8,7 +8,7 @@
   padding-right: 38px;
   padding-left: 35px;
 
-  min-height: 177px;
+  min-height: 176px;
 
   background-color: $gray;
 
@@ -39,10 +39,29 @@
 }
 
 .page-main__about {
-  padding-top: 30px;
+  position: relative;
+
+  padding-top: 39px;
   padding-left: 30px;
   padding-bottom: 30px;
   padding-right: 30px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 1px;
+
+    width: 319px;
+    height: 6px;
+
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    // scale(-1) works too
+    transform: rotate(180deg);
+  }
 }
 
 /* TASK 2 */
@@ -72,12 +91,20 @@
   padding-right: 30px;
 }
 
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .page-main__banner--stock {
+    background-image: url("../img/hero-mobile@2x.jpg");
+    background-size: 575px auto;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .page-main {
     width: $tablet-width;
   }
 
   .page-main__banner {
+    position: relative;
     padding-top: 96px;
 
     min-height: 226px;
@@ -87,8 +114,24 @@
 
       min-height: 746px;
 
+      background-image: url("../img/hero-tablet@1x.jpg");
       background-size: cover;
-      background-position: center 0;
+      background-position: center -1px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -11px;
+      left: 1px;
+      z-index: 2;
+
+      width: 770px;
+      height: 24px;
+
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-size: 770px 24px;
+      background-repeat: repeat-x;
     }
   }
 
@@ -109,10 +152,19 @@
   }
 
   .page-main__about {
-    padding-top: 60px;
+    padding-top: 87px;
     padding-left: 52px;
     padding-bottom: 90px;
     padding-right: 52px;
+
+    &::before {
+      top: 22px;
+
+      width: 771px;
+      height: 15px;
+
+      background-size: cover;
+    }
   }
 
   .page-main__reviews {
@@ -141,6 +193,12 @@
     padding-bottom: 50px;
     padding-right: 0;
   }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .page-main__banner--stock {
+      background-image: url("../img/hero-tablet@2x.jpg");
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -153,6 +211,18 @@
 
     &--stock {
       min-height: 746px;
+
+      background-image: url("../img/hero-desktop@1x.jpg");
+    }
+
+    &::before {
+      bottom: -16px;
+      left: 0;
+
+      width: $desktop-width;
+      height: 34px;
+      background-size: $desktop-width 34px;
+      background-position: center;
     }
   }
 
@@ -172,8 +242,19 @@
   }
 
   .page-main__about {
+    padding-top: 125px;
     padding-left: 225px;
     padding-right: 225px;
+
+    &::before {
+      top: 42px;
+      left: 50px;
+
+      width: 1050px;
+      height: 23px;
+
+      background-size: contain;
+    }
   }
 
   .page-main__reviews {
@@ -193,5 +274,11 @@
     padding-top: 128px;
     padding-left: 49px;
     padding-right: 47px;
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .page-main__banner--stock {
+      background-image: url("../img/hero-desktop@2x.jpg");
+    }
   }
 }

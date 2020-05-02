@@ -28,7 +28,7 @@
 
 @media (min-width: $tablet-width) {
   .site-list__item {
-    margin-right: 37px;
+    margin-right: 33px;
 
     border: none;
   }
@@ -56,6 +56,8 @@
   }
 
   .site-list--secondary .site-list__item {
+    margin-right: 25px;
+
     border: none;
   }
 
