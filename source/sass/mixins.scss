@@ -9,3 +9,39 @@
   outline-offset: 1px;
   box-shadow: 0 0 5px #4d90fe;
 }
+
+@mixin zig-zag-line-init {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 1px;
+
+  width: 319px;
+  height: 6px;
+
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  // scale(-1) works too
+  transform: rotate(180deg);
+}
+
+@mixin zig-zag-line-tablet {
+  top: 22px;
+
+  width: 771px;
+  height: 15px;
+
+  background-size: cover;
+}
+
+@mixin zig-zag-line-desktop {
+  top: 42px;
+  left: 50px;
+
+  width: 1050px;
+  height: 23px;
+
+  background-size: contain;
+}
