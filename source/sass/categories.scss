@@ -33,12 +33,12 @@
   }
 }
 
-.categories__link:hover path,
-.categories__link:focus path {
+.categories__link:hover .categories__icon,
+.categories__link:focus .categories__icon {
   fill-opacity: 0.7;
 }
 
-.categories__link:active path {
+.categories__link:active .categories__icon {
   fill-opacity: 1;
 }
 
@@ -61,10 +61,8 @@
 
   transform: translateY(-50%);
 
-  path {
-    fill: #149080;
-    fill-opacity: 0.5;
-  }
+  fill: #149080;
+  fill-opacity: 0.5;
 }
 
 @media (min-width: $tablet-width) {
