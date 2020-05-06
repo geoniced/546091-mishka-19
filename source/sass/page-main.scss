@@ -43,24 +43,11 @@
 
   padding-top: 39px;
   padding-left: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 28px;
   padding-right: 30px;
 
   &::before {
-    content: "";
-    position: absolute;
-    top: 6px;
-    left: 1px;
-
-    width: 319px;
-    height: 6px;
-
-    background-image: url("../img/bg-zigzag-line.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    // scale(-1) works too
-    transform: rotate(180deg);
+    @include zig-zag-line-init;
   }
 }
 
@@ -68,19 +55,26 @@
 .page-main__reviews {
   padding-left: 30px;
   padding-right: 30px;
+  padding-bottom: 39px;
 }
 
 .page-main__contacts {
-  padding-top: 86px;
+  position: relative;
+
+  padding-top: 47px;
   padding-left: 30px;
   padding-right: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 39px;
+
+  &::before {
+    @include zig-zag-line-init;
+  }
 }
 
 .page-main__catalog {
   padding-top: 30px;
   padding-left: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 58px;
   padding-right: 30px;
 }
 
@@ -147,41 +141,42 @@
 
   .page-main__promo {
     padding-top: 45px;
-    padding-left: 51px;
     padding-right: 52px;
+    padding-bottom: 31px;
+    padding-left: 51px;
   }
 
   .page-main__about {
     padding-top: 87px;
-    padding-left: 52px;
-    padding-bottom: 90px;
     padding-right: 52px;
+    padding-bottom: 83px;
+    padding-left: 52px;
 
     &::before {
-      top: 22px;
-
-      width: 771px;
-      height: 15px;
-
-      background-size: cover;
+      @include zig-zag-line-tablet;
     }
   }
 
   .page-main__reviews {
     padding-top: 77px;
-    padding-left: 45px;
-    padding-bottom: 110px;
+    padding-left: 47px;
+    padding-bottom: 94px;
     padding-right: 73px;
   }
 
   .page-main__contacts {
-    padding-top: 83px;
+    padding-top: 99px;
     padding-left: 51px;
     padding-right: 52px;
+    padding-bottom: 57px;
+
+    &::before {
+      @include zig-zag-line-tablet;
+    }
   }
 
   .page-main__catalog {
-    padding-top: 79px;
+    padding-top: 78px;
     padding-left: 51px;
     padding-bottom: 63px;
     padding-right: 54px;
@@ -242,18 +237,13 @@
   }
 
   .page-main__about {
-    padding-top: 125px;
-    padding-left: 225px;
+    padding-top: 124px;
     padding-right: 225px;
+    padding-bottom: 90px;
+    padding-left: 225px;
 
     &::before {
-      top: 42px;
-      left: 50px;
-
-      width: 1050px;
-      height: 23px;
-
-      background-size: contain;
+      @include zig-zag-line-desktop;
     }
   }
 
@@ -261,18 +251,23 @@
     padding-top: 70px;
     padding-left: 221px;
     padding-right: 69px;
-    padding-bottom: 160px;
+    padding-bottom: 119px;
   }
 
   .page-main__contacts {
-    padding-top: 166px;
+    padding-top: 207px;
     padding-left: 225px;
     padding-bottom: 105px;
+
+    &::before {
+      @include zig-zag-line-desktop;
+    }
   }
 
   .page-main__catalog {
-    padding-top: 128px;
+    padding-top: 127px;
     padding-left: 49px;
+    padding-bottom: 105px;
     padding-right: 47px;
   }
 

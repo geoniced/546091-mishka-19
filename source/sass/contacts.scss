@@ -72,14 +72,29 @@
 }
 
 .contacts__map-wrapper {
+  position: relative;
   // Окей ли так делать?
   margin-right: -30px;
   margin-left: -30px;
   margin-bottom: 39px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 145px;
+    left: 138px;
+
+    width: 67px;
+    height: 100px;
+    background-image: url("../img/icon-map-pin.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 .contacts__map-image {
   display: block;
+  width: 322px;
+  height: 457px;
 }
 
 @media (min-width: $tablet-width) {
@@ -130,9 +145,14 @@
   }
 
   .contacts__map-wrapper {
-    margin-right: -52px;
+    margin-right: -50px;
     margin-bottom: 55px;
-    margin-left: -51px;
+    margin-left: -49px;
+
+    &::before {
+      top: 139px;
+      left: 363px;
+    }
   }
 
   .contacts__map-image {
@@ -188,6 +208,11 @@
     right: 51px;
 
     margin: 0;
+
+    &::before {
+      top: 146px;
+      left: 240px;
+    }
   }
 
   .contacts__map-image {

@@ -180,7 +180,18 @@
             <article class="catalog__card production">
               <div class="production__video">
                 <!-- Плейсхолдер для видео -->
-                <img class="production__video-preview" src="img/video-mobile@1x.jpg" width="260" height="150" alt="Видео процесса производства">
+                <picture>
+                  <source media="(min-width: 1150px)"
+                      srcset="img/video-desktop@1x.jpg 1x,
+                              img/video-desktop@2x.jpg 2x">
+                  <source media="(min-width: 772px)"
+                      srcset="img/video-tablet@1x.jpg 1x,
+                              img/video-tablet@2x.jpg 2x">
+                  <img class="production__video-preview" src="img/video-mobile@1x.jpg"
+                      srcset="img/video-mobile@2x.jpg 2x"
+                      width="260" height="150" alt="Видео процесса производства">
+                </picture>
+
                 <!-- Здесь будет видео -->
               </div>
 
@@ -289,6 +300,7 @@
       </div>
     </footer>
 
+    <script src="js/picturefill.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>
