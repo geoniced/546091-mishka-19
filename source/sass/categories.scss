@@ -8,6 +8,13 @@
   &--toys {
     background-color: $greeny-blue;
   }
+
+  &:hover,
+  &:focus {
+    position: relative;
+    z-index: 1;
+    transform: scaleY(1.05);
+  }
 }
 
 .categories__link {
@@ -22,11 +29,6 @@
 
   color: $white;
   text-decoration: none;
-
-  &:hover,
-  &:focus {
-    padding-bottom: 35px;
-  }
 
   &:active {
     opacity: 0.3;
