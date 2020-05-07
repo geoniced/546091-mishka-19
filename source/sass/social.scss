@@ -16,11 +16,30 @@
   color: $black;
 }
 
-.social__link:hover path,
-.social__link:focus path {
+.social__link:hover .social__icon,
+.social__link:focus .social__icon {
   fill: $puerto-rico;
 }
 
-.social__link:active path {
+.social__link:active .social__icon {
   fill-opacity: 0.3;
+}
+
+.social__icon {
+  fill: #231f20;
+
+  &--instagram {
+    width: 22px;
+    height: 21px;
+  }
+
+  &--facebook {
+    width: 15px;
+    height: 28px;
+  }
+
+  &--twitter {
+    width: 23px;
+    height: 20px;
+  }
 }

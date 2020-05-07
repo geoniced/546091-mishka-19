@@ -74,6 +74,8 @@
     background-image: url("../img/icon-menu-open.svg");
     background-repeat: no-repeat;
     background-position: center;
+
+    cursor: pointer;
   }
 
   .main-nav--opened .main-nav__menu {

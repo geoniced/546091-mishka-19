@@ -26,17 +26,15 @@
   height: 34px;
   margin-left: 30px;
 
-  path {
-    fill: $seafoam-blue;
-  }
+  fill: $seafoam-blue;
 }
 
-.copyright__logo:hover path,
-.copyright__logo:focus path {
+.copyright__logo:hover,
+.copyright__logo:focus {
   fill: $puerto-rico;
 }
 
-.copyright__logo:active path {
+.copyright__logo:active {
   fill-opacity: 0.3;
 }
 

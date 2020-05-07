@@ -21,13 +21,18 @@
   display: none;
 }
 
-.page-footer__logo:hover path,
-.page-footer__logo:focus path {
+.page-footer__logo:hover .page-footer__logo-image,
+.page-footer__logo:focus .page-footer__logo-image {
   fill: $puerto-rico;
 }
 
-.page-footer__logo:active path {
+.page-footer__logo:active .page-footer__logo-image {
   fill-opacity: 0.3;
+}
+
+.page-footer__logo-image {
+  width: 102px;
+  height: 34px;
 }
 
 @media (min-width: $tablet-width) {
