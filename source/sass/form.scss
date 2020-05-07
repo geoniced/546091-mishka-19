@@ -56,19 +56,31 @@
 .form__icon {
   position: absolute;
 
+  fill-opacity: 0.2;
+
   &--phone {
     top: 11px;
     right: 8px;
+
+    width: 25px;
+    height: 24px;
   }
 
   &--mail {
     top: 11px;
     right: 4px;
-  }
 
-  path {
-    fill-opacity: 0.2;
+    width: 32px;
+    height: 32px;
+
+    fill: #333333;
   }
+}
+
+.form__input:hover + .form__icon,
+.form__input:focus + .form__icon {
+  fill: $seafoam-blue-two;
+  fill-opacity: 1;
 }
 
 // Если дальше стили будут различаться – вынесу в отдельные
@@ -381,12 +393,6 @@
     &--mail {
       right: 22px;
     }
-  }
-
-  .form__input:hover + .form__icon path,
-  .form__input:focus + .form__icon path {
-    fill: $seafoam-blue-two;
-    fill-opacity: 1;
   }
 
   .form__textarea {
