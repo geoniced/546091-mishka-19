@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -112,7 +111,7 @@
                 </div>
                 <div class="card__order">
                   <b class="card__price">1 200 руб.</b>
-                  <a class="card__cart" href="#">
+                  <a class="card__cart js-order" href="#">
                     <svg class="card__cart-icon">
                       <use xlink:href="#icon-cart"></use>
                     </svg>
@@ -156,7 +155,7 @@
                 </div>
                 <div class="card__order">
                   <b class="card__price">690 руб.</b>
-                  <a class="card__cart" href="#">
+                  <a class="card__cart js-order" href="#">
                     <svg class="card__cart-icon">
                       <use xlink:href="#icon-cart"></use>
                     </svg>
@@ -200,7 +199,7 @@
                 </div>
                 <div class="card__order">
                   <b class="card__price">1 500 руб.</b>
-                  <a class="card__cart" href="#">
+                  <a class="card__cart js-order" href="#">
                     <svg class="card__cart-icon">
                       <use xlink:href="#icon-cart"></use>
                     </svg>
@@ -253,7 +252,6 @@
         </ul>
       </section>
 
-      <!-- Пока заверстал попап -->
       <section class="modal modal-order modal--closed">
         <h2 class="modal-order__title">Добавить в корзину</h2>
 
@@ -262,7 +260,7 @@
         </p>
         <ul class="modal-order__size-list">
           <li class="modal-order__size-item">
-            <button class="modal-order__size-button modal-order__size-button--s" type="button">S</button>
+            <button class="modal-order__size-button modal-order__size-button--s modal-order__size-button--active type="button">S</button>
           </li>
           <li class="modal-order__size-item">
             <button class="modal-order__size-button modal-order__size-button--m" type="button">M</button>

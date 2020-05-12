@@ -4,11 +4,11 @@
 }
 
 .card:hover .card__card-wrapper {
-  box-shadow: 0 4px 8px 1px $gray;
+  box-shadow: 0 6px 10px 0 $black-10;
 }
 
 .card:active .card__card-wrapper {
-  box-shadow: 0 2px 8px -2px $gray;
+  box-shadow: 0 3px 5px 0 $black-10;
 }
 
 .card__preview {

@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -149,7 +148,7 @@
                   width="260" height="315" alt="Три выязанные корзинки сложенные друг на друге разных цветов">
             </picture>
             <p class="promo-item__price">Цена: 990 руб.</p>
-            <a class="promo-item__order button" href="#">Заказать</a>
+            <a class="promo-item__order button js-order" href="#">Заказать</a>
           </div>
 
         </article>
@@ -253,6 +252,27 @@
         </div>
 
         <a class="contacts__write button" href="#">Напишите нам</a>
+      </section>
+
+      <section class="modal modal-order modal--closed">
+        <h2 class="modal-order__title">Добавить в корзину</h2>
+
+        <p class="modal-order__choose">
+          Выберите размер:
+        </p>
+        <ul class="modal-order__size-list">
+          <li class="modal-order__size-item">
+            <button class="modal-order__size-button modal-order__size-button--s modal-order__size-button--active type="button">S</button>
+          </li>
+          <li class="modal-order__size-item">
+            <button class="modal-order__size-button modal-order__size-button--m" type="button">M</button>
+          </li>
+          <li class="modal-order__size-item">
+            <button class="modal-order__size-button modal-order__size-button--l" type="button">L</button>
+          </li>
+        </ul>
+
+        <a class="modal-order__add button" href="#">Добавить</a>
       </section>
     </main>
 

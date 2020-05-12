@@ -1,5 +1,7 @@
 .modal-order__title {
-  margin: 0;
+  width: 150px;
+  margin: 0 auto;
+  margin-bottom: 12px;
 
   font-size: 25px;
   line-height: 30px;
@@ -9,6 +11,7 @@
 
 .modal-order__choose {
   margin: 0;
+  margin-bottom: 22px;
 
   font-size: 15px;
   line-height: 30px;
@@ -17,6 +20,7 @@
 
 .modal-order__size-list {
   @include list-style-reset;
+  margin-bottom: 31px;
 
   display: flex;
   justify-content: space-between;
@@ -26,6 +30,52 @@
   width: 82px;
   height: 52px;
 
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: bold;
+  color: $charcoal;
+
   border: 2px solid rgba($charcoal, 0.1);
   background-color: white;
+
+  &:hover,
+  &:focus {
+    border-color: rgba($charcoal, 0.4);
+  }
+
+  &--active,
+  &:active {
+    border-color: $seafoam-blue;
+  }
+}
+
+.modal-order__add {
+  color: $white;
+  border-color: $seafoam-blue;
+  background-color: $seafoam-blue;
+
+  // Этого нет в стайлгайде, но пусть хоть красивые состояния будут
+  // а не унаследованные от обычной кнопки
+  &:hover,
+  &:focus {
+    color: $seafoam-blue;
+    background-color: $white;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .modal-order__title {
+    width: auto;
+
+    font-size: 30px;
+    line-height: 57px;
+  }
+
+  .modal-order__choose {
+    font-size: 17px;
+  }
+
+  .modal-order__size-button {
+    width: 112px;
+  }
 }
