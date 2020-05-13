@@ -8,7 +8,6 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
-/* stylelint-disable */
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -348,5 +347,3 @@ template {
 [hidden] {
   display: none;
 }
-
-/* stylelint-enable */
