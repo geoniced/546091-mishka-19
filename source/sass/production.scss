@@ -9,11 +9,11 @@
 }
 
 .production:hover .production__wrapper {
-  box-shadow: 0 4px 8px 1px $gray;
+  box-shadow: 0 6px 10px 0 $black-10;
 }
 
 .production:active .production__wrapper {
-  box-shadow: 0 2px 8px -2px $gray;
+  box-shadow: 0 3px 5px 0 $black-10;
 }
 
 .production__wrapper {

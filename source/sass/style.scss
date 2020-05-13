@@ -1,6 +1,8 @@
+@import "normalize.scss";
 @import "mixins.scss";
 @import "variables.scss";
 @import "scaffolding.scss";
+@import "button.scss";
 @import "page-header.scss";
 @import "main-nav.scss";
 @import "site-list.scss";
@@ -22,4 +24,4 @@
 @import "copyright.scss";
 @import "modal.scss";
 @import "modal-order.scss";
-@import "button.scss";
+@import "blocklayer.scss";

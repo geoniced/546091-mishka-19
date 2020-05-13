@@ -8,13 +8,6 @@
   &--toys {
     background-color: $greeny-blue;
   }
-
-  &:hover,
-  &:focus {
-    position: relative;
-    z-index: 1;
-    transform: scaleY(1.05);
-  }
 }
 
 .categories__link {
@@ -76,11 +69,35 @@
   }
 
   .categories__list {
+    position: relative;
     display: flex;
   }
 
   .categories__item {
     width: 50%;
+    min-height: 119px;
+
+    &--interior {
+      margin-right: auto;
+    }
+
+    &--toys {
+      margin-left: auto;
+    }
+
+    &:hover,
+    &:focus {
+      position: absolute;
+      top: -5px;
+      z-index: 1;
+
+      min-height: 124px;
+    }
+  }
+
+  .categories__item--toys:hover,
+  .categories__item--toys:focus {
+    left: 50%;
   }
 
   .categories__link {
