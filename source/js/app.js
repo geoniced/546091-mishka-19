@@ -54,4 +54,4 @@ function keydownHandler(evt) {
 
     window.removeEventListener('keydown', keydownHandler);
   }
-}
+};
