@@ -59,6 +59,8 @@
 .promo-item__value {
   padding-top: 10px;
   padding-bottom: 10px;
+
+  word-break: break-word;
 }
 
 .promo-item__image {
@@ -95,6 +97,7 @@
   }
 
   .promo-item__promo {
+    flex-shrink: 0;
     max-width: 80px;
 
     line-height: 17px;
@@ -148,6 +151,7 @@
   }
 
   .promo-item__title {
+    padding-right: 50px;
     font-size: 53px;
     line-height: 57px;
   }
