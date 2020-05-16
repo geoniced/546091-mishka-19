@@ -6,6 +6,7 @@
 .page-main__banner {
   padding-top: 71px;
   padding-right: 38px;
+  padding-bottom: 20px;
   padding-left: 35px;
 
   min-height: 177px;
@@ -100,11 +101,13 @@
   .page-main__banner {
     position: relative;
     padding-top: 95px;
+    padding-bottom: 40px;
 
     min-height: 226px;
 
     &--stock {
       padding-top: 153px;
+      padding-bottom: 130px;
 
       min-height: 746px;
 
