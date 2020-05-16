@@ -34,10 +34,12 @@
 .contacts__property,
 .contacts__value {
   vertical-align: top;
+
+  word-break: break-word;
 }
 
 .contacts__property {
-  min-width: 78px;
+  max-width: 77px;
 
   font-size: 15px;
   line-height: 30px;
@@ -100,6 +102,7 @@
 @media (min-width: $tablet-width) {
   .contacts__title {
     position: relative;
+    z-index: 1;
 
     margin-bottom: 48px;
     margin-left: -3px;
@@ -141,6 +144,8 @@
   }
 
   .contacts__property {
+    max-width: none;
+    min-width: 78px;
     width: auto;
   }
 
