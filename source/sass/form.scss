@@ -264,10 +264,9 @@
     width: $tablet-width;
     margin: 0;
     padding-top: 50px;
-    padding-right: 52px;
-
+    padding-right: 50px;
     padding-bottom: 50px;
-    padding-left: 219px;
+    padding-left: 217px;
 
     border: none;
 
@@ -285,6 +284,7 @@
   .form__grouped-container {
     padding-top: 50px;
     padding-bottom: 50px;
+    margin-bottom: 0;
   }
 
   .form__grouped-container .form__field {
@@ -364,7 +364,7 @@
   }
 
   .form__checkbox-label {
-    width: 230px; // was: 50%
+    width: 239px; // was: 50%
     min-height: 52px;
     padding-left: 81px;
     margin-bottom: 24px;
@@ -422,8 +422,8 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-left: 52px;
-    padding-right: 52px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
   .form__hint {
