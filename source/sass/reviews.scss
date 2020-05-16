@@ -51,7 +51,7 @@
   .reviews {
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
-    background-position: left 2px top;
+    background-position: left top;
     background-size: 350px 457px;
   }
 
@@ -95,7 +95,7 @@
 
   .reviews__write {
     position: absolute;
-    right: 52px;
+    right: 50px;
     top: 79px;
 
     min-width: 175px;

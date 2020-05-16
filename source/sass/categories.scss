@@ -16,8 +16,10 @@
   display: block;
   padding-top: 25px;
   padding-bottom: 30px;
-  padding-left: 30px;
+  padding-left: 29px;
 
+  font-size: 19px;
+  line-height: 24px;
   font-weight: bold;
 
   color: $white;
@@ -52,7 +54,7 @@
 .categories__icon {
   position: absolute;
   top: 50%;
-  right: 37px;
+  right: 36px;
 
   transform: translateY(-50%);
 

@@ -141,16 +141,16 @@
 
   .page-main__promo {
     padding-top: 45px;
-    padding-right: 52px;
+    padding-right: 51px;
     padding-bottom: 31px;
-    padding-left: 51px;
+    padding-left: 48px;
   }
 
   .page-main__about {
     padding-top: 87px;
-    padding-right: 52px;
+    padding-right: 50px;
     padding-bottom: 83px;
-    padding-left: 52px;
+    padding-left: 50px;
 
     &::before {
       @include zig-zag-line-tablet;
@@ -159,15 +159,15 @@
 
   .page-main__reviews {
     padding-top: 77px;
-    padding-left: 47px;
+    padding-left: 45px;
     padding-bottom: 94px;
-    padding-right: 73px;
+    padding-right: 70px;
   }
 
   .page-main__contacts {
     padding-top: 99px;
-    padding-left: 51px;
-    padding-right: 52px;
+    padding-left: 49px;
+    padding-right: 50px;
     padding-bottom: 57px;
 
     &::before {

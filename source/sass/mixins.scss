@@ -14,7 +14,7 @@
   content: "";
   position: absolute;
   top: 6px;
-  left: 1px;
+  left: 0;
 
   width: 319px;
   height: 6px;
@@ -30,7 +30,7 @@
 @mixin zig-zag-line-tablet {
   top: 22px;
 
-  width: 771px;
+  width: $tablet-width;
   height: 15px;
 
   background-size: cover;
