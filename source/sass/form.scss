@@ -202,6 +202,8 @@
   height: 52px;
   margin: 0;
   margin-bottom: 22px;
+  padding-top: 0;
+  padding-left: 0;
 
   border: 0;
   border-bottom: 2px solid $black;
@@ -209,6 +211,18 @@
 
   font-size: 17px;
   line-height: 18px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.form__grouped-container {
+  margin-bottom: 32px;
+}
+
+.form__grouped-container .form__field {
+  margin-bottom: 32px;
 
   &:last-of-type {
     margin-bottom: 0;
