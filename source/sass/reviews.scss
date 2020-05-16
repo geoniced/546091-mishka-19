@@ -57,6 +57,7 @@
 
   .reviews__title {
     margin-bottom: 49px;
+    padding-right: 180px;
 
     font-size: 43px;
     line-height: 50px;
@@ -77,6 +78,7 @@
 
   .reviews__author-info {
     margin-bottom: 0;
+    padding-right: 30px;
   }
 
   .reviews__author-name {
@@ -98,7 +100,7 @@
     right: 50px;
     top: 79px;
 
-    min-width: 175px;
+    max-width: 175px;
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {

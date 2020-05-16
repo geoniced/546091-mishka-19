@@ -32,6 +32,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .slider__controls {
+    flex-shrink: 0;
+  }
+
   .slider__toggle {
     /* Чувствую, что здесь я не совсем правильно делаю,
        и оформление slider__toggle должно быть задано в рамках
