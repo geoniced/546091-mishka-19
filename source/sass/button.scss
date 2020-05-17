@@ -7,7 +7,9 @@
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
+  word-break: break-all;
   border: 2px solid $charcoal;
+  background-color: $white;
 
   &:hover,
   &:focus {
