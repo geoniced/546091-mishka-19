@@ -305,6 +305,8 @@
     position: absolute;
     top: 68px;
     left: 52px;
+
+    max-width: 150px;
   }
 
   .form__wrapper {
@@ -331,6 +333,7 @@
 
   .form__grouped-fields .form__label {
     min-height: auto;
+    max-width: 250px;
     margin-right: 25px;
   }
 
@@ -429,6 +432,7 @@
   .form__hint {
     order: 1;
     margin-bottom: 0;
+    margin-left: 20px;
 
     font-size: 17px;
     line-height: 30px;
@@ -457,6 +461,7 @@
   .form__field-name {
     left: 112px;
     min-width: auto;
+    max-width: 100px;
   }
 
   .form__checkbox-label {
