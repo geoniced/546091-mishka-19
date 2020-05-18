@@ -38,31 +38,41 @@
 @media (min-width: $tablet-width) {
   .page-footer {
     flex-direction: row;
-    justify-content: space-between;
 
     /* на макете видны по бокам пиксельные отступы */
     width: 768px;
     margin: 0 auto;
     padding-top: 50px;
     padding-right: 50px;
-    padding-bottom: 59px;
+    padding-bottom: 41px;
     padding-left: 50px;
-  }
-
-  .page-footer__social {
-    padding-bottom: 0;
-    border: none;
   }
 
   .page-footer__logo {
     display: block;
     width: 102px;
     height: 34px;
+    margin-right: 160px;
+  }
+
+  .page-footer__social {
+    min-height: 52px;
+    margin-right: 72px;
+    padding-bottom: 0;
+    border: none;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-footer {
     width: $desktop-width;
+  }
+
+  .page-footer__logo {
+    margin-right: 350px;
+  }
+
+  .page-footer__social {
+    margin-right: 263px;
   }
 }

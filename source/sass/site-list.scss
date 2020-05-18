@@ -9,8 +9,9 @@
 .site-list__link {
   display: block;
   padding-top: 27px;
-  padding-left: 76px;
+  padding-right: 20px;
   padding-bottom: 27px;
+  padding-left: 76px;
 
   color: $black;
   text-decoration: none;
@@ -35,13 +36,15 @@
 
   .site-list__link {
     padding-top: 18px;
+    padding-right: 0;
+    padding-bottom: 32px;
     padding-left: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .site-list__item {
-    padding-right: 35px;
+    padding-right: 36px;
 
     border-right: 1px solid $white-two;
 

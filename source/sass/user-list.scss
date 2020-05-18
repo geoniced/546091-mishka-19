@@ -11,8 +11,9 @@
 
   display: block;
   padding-top: 27px;
-  padding-left: 76px;
+  padding-right: 20px;
   padding-bottom: 27px;
+  padding-left: 76px;
 
   color: $black;
   text-decoration: none;
@@ -73,6 +74,8 @@
 
   .user-list__link {
     padding-top: 31px;
+    padding-right: 0;
+    padding-bottom: 32px;
     padding-left: 81px;
   }
 

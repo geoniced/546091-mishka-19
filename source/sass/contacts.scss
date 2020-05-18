@@ -34,10 +34,12 @@
 .contacts__property,
 .contacts__value {
   vertical-align: top;
+
+  word-break: break-word;
 }
 
 .contacts__property {
-  min-width: 78px;
+  width: 77px;
 
   font-size: 15px;
   line-height: 30px;
@@ -93,13 +95,24 @@
 
 .contacts__map-image {
   display: block;
-  width: 322px;
+  width: $mobile-width;
+  height: 457px;
+}
+
+.contacts__map {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: block;
+  width: $mobile-width;
   height: 457px;
 }
 
 @media (min-width: $tablet-width) {
   .contacts__title {
     position: relative;
+    z-index: 1;
 
     margin-bottom: 48px;
     margin-left: -3px;
@@ -141,13 +154,13 @@
   }
 
   .contacts__property {
-    width: auto;
+    width: 78px;
   }
 
   .contacts__map-wrapper {
     margin-right: -50px;
     margin-bottom: 55px;
-    margin-left: -49px;
+    margin-left: -50px;
 
     &::before {
       top: 139px;
@@ -157,6 +170,11 @@
 
   .contacts__map-image {
     // Надо придумать что делать так, чтобы она тянулась, хм
+    width: 768px;
+    height: 457px;
+  }
+
+  .contacts__map {
     width: 768px;
     height: 457px;
   }
@@ -216,6 +234,11 @@
   }
 
   .contacts__map-image {
+    width: 525px;
+    height: 457px;
+  }
+
+  .contacts__map {
     width: 525px;
     height: 457px;
   }
