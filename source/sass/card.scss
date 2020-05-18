@@ -12,6 +12,7 @@
 }
 
 .card__preview {
+  position: relative;
   display: block;
 }
 
@@ -86,6 +87,8 @@
 
 .card__cart {
   position: relative;
+
+  flex-shrink: 0;
   width: 24px;
   height: 24px;
 }
@@ -102,7 +105,7 @@
 
 .card__cart-icon {
   position: absolute;
-  top: 2px;
+  top: 1px;
   left: 6px;
 
   width: 21px;
@@ -140,6 +143,7 @@
   .card__card-wrapper {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     width: 316px;
     padding-left: 25px;
   }
@@ -149,7 +153,7 @@
   }
 
   .card__order {
-    margin-top: auto;
+    margin-top: 12px;
   }
 
   .card__price {
