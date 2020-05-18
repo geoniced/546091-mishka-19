@@ -124,6 +124,7 @@
     flex-direction: row;
     flex-wrap: wrap;
 
+    max-width: $tablet-width;
     padding-left: 50px;
     padding-right: 50px;
   }
@@ -174,6 +175,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .main-nav__wrapper {
+    max-width: $desktop-width;
+  }
+
   .main-nav__logo {
     width: 327px;
     padding-top: 8px;
