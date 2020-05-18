@@ -39,7 +39,7 @@
 }
 
 .contacts__property {
-  max-width: 77px;
+  width: 77px;
 
   font-size: 15px;
   line-height: 30px;
@@ -144,9 +144,7 @@
   }
 
   .contacts__property {
-    max-width: none;
-    min-width: 78px;
-    width: auto;
+    width: 78px;
   }
 
   .contacts__map-wrapper {
