@@ -1,8 +1,24 @@
+.form__row {
+  margin-bottom: 31px;
+
+  &:nth-last-of-type(2) {
+    margin-bottom: 0;
+  }
+
+  &:last-of-type {
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+}
+
 .form__field {
+  width: $mobile-width - 60px;
   padding: 0;
   padding-top: 25px;
-  margin: 0;
-  margin-bottom: 31px;
+  // padding-right: 30px;
+  // padding-left: 30px;
+
+  // margin: 0;
 
   border: none;
   border-top: 1px solid $seafoam-blue;
@@ -13,10 +29,6 @@
 
   &--no-label {
     padding-top: 7px;
-  }
-
-  &:last-of-type {
-    margin-bottom: 10px;
   }
 }
 
@@ -217,10 +229,14 @@
 
 .form__grouped-container {
   margin-bottom: 32px;
+  padding-right: 30px;
+  padding-left: 30px;
 }
 
 .form__grouped-container .form__field {
   margin-bottom: 32px;
+  margin-right: 0;
+  margin-left: 0;
 
   &:last-of-type {
     margin-bottom: 0;
@@ -241,6 +257,9 @@
 .form__controls {
   display: flex;
   flex-direction: column;
+
+  padding-right: 30px;
+  padding-left: 30px;
 }
 
 .form__hint {
@@ -256,32 +275,35 @@
 }
 
 @media (min-width: $tablet-width) {
+  .form__row {
+    margin-bottom: 0;
+
+    &:last-of-type {
+      margin-top: 3px;
+    }
+  }
+
   .form__field {
+    width: $tablet-width;
     position: relative;
 
-    width: $tablet-width;
-    margin: 0;
     padding-top: 50px;
     padding-right: 50px;
     padding-bottom: 50px;
     padding-left: 217px;
 
     border: none;
-
-    &:last-of-type {
-      margin-bottom: 3px;
-    }
   }
 
-  .form__gray-field {
-    // Нормально если я сделаю служебный класс в контексте формы
-    // как элемент?
+  .form__row--gray {
     background-color: $gray;
   }
 
   .form__grouped-container {
     padding-top: 50px;
+    padding-right: 0;
     padding-bottom: 50px;
+    padding-left: 0;
     margin-bottom: 0;
   }
 
@@ -448,17 +470,17 @@
 }
 
 @media (min-width: $desktop-width) {
+  .form__row:last-of-type {
+    margin-top: 0;
+  }
+
   .form__field {
     width: $desktop-width;
     padding-left: 225px;
     padding-right: 225px;
 
     &--checkbox-rows {
-      padding-right: 170px;
-    }
-
-    &:last-of-type {
-      margin-bottom: 0;
+      padding-right: 140px;
     }
   }
 

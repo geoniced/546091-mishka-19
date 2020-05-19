@@ -1,0 +1,40 @@
+.centered {
+  width: 100%;
+
+  &--zigzag {
+    position: relative;
+
+    &::before {
+      @include zig-zag-line-init;
+    }
+  }
+}
+
+.centered__wrapper {
+  width: $mobile-width;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .centered--zigzag {
+    &::before {
+      @include zig-zag-line-tablet;
+    }
+  }
+
+  .centered__wrapper {
+    width: $tablet-width;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .centered--zigzag {
+    &::before {
+      @include zig-zag-line-desktop;
+    }
+  }
+
+  .centered__wrapper {
+    width: $desktop-width;
+  }
+}
