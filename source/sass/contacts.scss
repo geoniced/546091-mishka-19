@@ -107,6 +107,8 @@
   display: block;
   width: $mobile-width;
   height: 457px;
+
+  border: 0;
 }
 
 @media (min-width: $tablet-width) {
