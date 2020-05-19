@@ -2,6 +2,13 @@
   position: relative;
   z-index: 3;
 
+  width: 100%;
+  border-bottom: 1px solid $white-two;
+
+  margin: 0 auto;
+}
+
+.page-header__wrapper {
   width: $mobile-width;
   margin: 0 auto;
 }
@@ -9,14 +16,18 @@
 @media (min-width: $tablet-width) {
   .page-header {
     display: flex;
-    width: $tablet-width;
 
     min-height: 88px;
+    border-bottom: 1px solid $black-10;
+  }
+
+  .page-header__wrapper {
+    width: $tablet-width;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .page-header {
+  .page-header__wrapper {
     width: $desktop-width;
   }
 }
