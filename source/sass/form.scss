@@ -300,6 +300,10 @@
     padding-left: 217px;
 
     border: none;
+
+    &--checkbox-rows {
+      padding-right: 27px;
+    }
   }
 
   .form__row--gray {
@@ -343,7 +347,7 @@
 
     &--row {
       flex-direction: row;
-      justify-content: space-between;
+      align-items: flex-start;
     }
   }
 
@@ -487,7 +491,7 @@
     padding-right: 225px;
 
     &--checkbox-rows {
-      padding-right: 140px;
+      padding-right: 128px;
     }
   }
 
