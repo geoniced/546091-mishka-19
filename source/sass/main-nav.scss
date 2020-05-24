@@ -108,10 +108,15 @@
 }
 
 @media (min-width: $tablet-width) {
-  .main-nav {
-    // для того, чтобы блоки списков как будто "выпадали"
-    // из потока хедера и свисали под ним
-    height: 88px;
+  .main-nav__secondary {
+    position: absolute;
+    top: 100%;
+    right: 50px;
+
+    display: flex;
+    flex-direction: row;
+    max-width: 334px;
+    margin-left: auto;
   }
 
   .main-nav__menu {
@@ -144,14 +149,24 @@
   .main-nav__list {
     display: flex;
     // flex-grow: 1;
+    flex-wrap: wrap;
 
     &--secondary {
       display: none;
     }
 
-    &:first-of-type {
+    &--user {
+      max-width: 347px;
+    }
+
+    &--site {
+      position: absolute;
+      top: 100%;
+      left: 50px;
+
       order: 1;
       flex-wrap: wrap;
+      max-width: 334px;
 
       font-size: 15px;
       line-height: 24px;
@@ -178,6 +193,11 @@
     max-width: $desktop-width;
   }
 
+  .main-nav__secondary {
+    width: 1050px;
+    max-width: none;
+  }
+
   .main-nav__logo {
     width: 327px;
     padding-top: 8px;
@@ -194,12 +214,22 @@
       display: flex;
       font-size: 15px;
       line-height: 24px;
+      max-width: 525px;
     }
 
-    &:first-of-type {
+    &--site {
+      position: static;
+      top: auto;
+      left: auto;
+
       order: -1;
+      max-width: 375px;
 
       font-size: 17px;
     }
+  }
+
+  .main-nav__info {
+    max-width: 500px;
   }
 }
