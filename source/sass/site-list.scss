@@ -29,9 +29,14 @@
 
 @media (min-width: $tablet-width) {
   .site-list__item {
+    max-width: 150px;
     margin-right: 33px;
 
     border: none;
+
+    &:nth-of-type(2n) {
+      padding-right: 0;
+    }
   }
 
   .site-list__link {
@@ -44,9 +49,15 @@
 
 @media (min-width: $desktop-width) {
   .site-list__item {
+    display: flex;
+    max-width: 186px;
     padding-right: 36px;
 
     border-right: 1px solid $white-two;
+
+    &:nth-of-type(2n) {
+      max-width: 156px;
+    }
 
     &:last-child {
       padding-right: 0;
@@ -59,7 +70,9 @@
   }
 
   .site-list--secondary .site-list__item {
-    margin-right: 25px;
+    max-width: none;
+    margin-right: 61px;
+    padding-right: 0;
 
     border: none;
   }

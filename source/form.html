@@ -32,9 +32,10 @@
                 <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
                 <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип магазина Mishka">
               </picture>
+              <span class="visually-hidden">Главная страница</span>
             </a>
 
-            <ul class="main-nav__list site-list">
+            <ul class="main-nav__list main-nav__list--site site-list">
               <li class="site-list__item">
                 <a class="site-list__link" href="catalog.html">Каталог товаров</a>
               </li>
@@ -43,7 +44,7 @@
               </li>
             </ul>
 
-            <ul class="main-nav__list user-list">
+            <ul class="main-nav__list main-nav__list--user user-list">
               <li class="user-list__item user-list__item--search">
                 <a class="user-list__link" href="search.html">
                   <svg class="user-list__icon user-list__icon--search" width="18" height="18">
@@ -62,16 +63,18 @@
               </li>
             </ul>
 
-            <ul class="main-nav__list main-nav__list--secondary site-list site-list--secondary">
-              <li class="site-list__item">
-                <a class="site-list__link" href="arrivals.html">Новые поступления</a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link" href="sale.html">Распродажа</a>
-              </li>
-            </ul>
+            <div class="main-nav__secondary">
+              <ul class="main-nav__list main-nav__list--secondary site-list site-list--secondary">
+                <li class="site-list__item">
+                  <a class="site-list__link" href="arrivals.html">Новые поступления</a>
+                </li>
+                <li class="site-list__item">
+                  <a class="site-list__link" href="sale.html">Распродажа</a>
+                </li>
+              </ul>
 
-            <p class="main-nav__info">Бесплатная доставка по России</p>
+              <p class="main-nav__info">Бесплатная доставка по России</p>
+            </div>
           </div>
         </nav>
       </div>
@@ -105,7 +108,7 @@
           </div>
 
 
-          <div class="centered form__row--gray form__row">
+          <div class="centered form__row form__row--gray">
             <fieldset class="form__field form__field--checkbox-rows centered__wrapper">
               <legend class="form__field-name">Цвет</legend>
 
@@ -154,8 +157,8 @@
           </div>
 
 
-          <div class="centered form__row--gray form__row">
-            <div class="form__grouped-container form__row--gray centered__wrapper">
+          <div class="centered form__row form__row--gray">
+            <div class="form__grouped-container centered__wrapper">
               <fieldset class="form__field form__field--no-label">
                 <legend class="form__field-name">Тел</legend>
 
@@ -188,6 +191,7 @@
               <legend class="form__field-name">Доп</legend>
 
               <div class="form__wrapper">
+                <label class="visually-hidden" for="knitting__additional">Пожелания к заказу</label>
                 <textarea class="form__textarea" name="knitting__additional" id="knitting__additional" placeholder="Опишите все ваши пожелания к заказу"></textarea>
               </div>
             </fieldset>

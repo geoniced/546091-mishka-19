@@ -156,6 +156,7 @@
   }
 
   .contacts__property {
+    flex-shrink: 0;
     width: 78px;
   }
 
@@ -220,6 +221,10 @@
 
   .contacts__property {
     margin-right: 0;
+  }
+
+  .contacts__value {
+    max-width: 220px;
   }
 
   .contacts__map-wrapper {
