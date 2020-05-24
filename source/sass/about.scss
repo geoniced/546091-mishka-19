@@ -107,7 +107,6 @@
     flex-wrap: wrap;
     flex-direction: column;
     width: 100%;
-    max-height: 410px;
 
     font-size: 20px;
     line-height: 22px;
@@ -118,7 +117,7 @@
     min-height: 60px;
     margin-bottom: 55px;
 
-    &:nth-child(3n) {
+    &:last-child {
       margin-bottom: 0;
     }
   }
