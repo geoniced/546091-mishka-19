@@ -1,6 +1,6 @@
 .user-list__item {
   border-bottom: 1px solid $white-two;
-  word-break: break-word;
+  word-break: break-all;
 
   &:last-child {
     margin-right: 0;
